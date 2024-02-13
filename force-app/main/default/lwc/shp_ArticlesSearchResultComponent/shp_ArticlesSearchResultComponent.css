@@ -1,0 +1,367 @@
+.knowledgeSearchResultsCmp{
+	max-width: 75rem;
+	margin: 0 auto;
+	
+	
+ }
+ .knowledgeSearchResultsCmp .knowledgeSearchInfo
+{
+	padding: 0.5rem 0rem;
+}
+.knowledgeCatSearchInfo{
+	padding: 0rem 0rem;
+}
+
+ .knowledgeSearchInfo h2, .knowledgeCatSearchInfo h2{
+	color: #000;
+	text-align: center;
+	font-family: Open Sans;
+	font-size: 1.875rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 2.5rem; 
+	padding-bottom:0.5rem;
+}
+
+ .knowledgeSearchResultsCmp .searchInfo, .knowledgeCatSearchInfo .searchInfo, .knowledgeSearchInfo .searchInfo {
+	color: var(--neutral-800, #333);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	/* Body/Body2--14 Regular */
+	font-family: Open Sans;
+	font-size: 0.75rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1rem; 
+	padding-top:0.5
+}
+  .fw700{
+	font-weight: 700;
+}
+.text-center{
+	text-align: center;
+}
+.text-right{
+	text-align: right!important;
+}
+.knowledgeSearchResultsCmp .articleContainer{
+	padding:1rem 0rem 3.75rem 0rem;
+}
+.knowledgeSearchResultsCmp .categoryWrapperPadding{
+	padding:1rem 1.5rem;
+}
+.knowledgeSearchResultsCmp .clientAndCategoryName{
+	color: var(--neutral-700, #666);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Open Sans;
+	font-size: 0.75rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1rem; /* 133.333% */
+	letter-spacing: 0.07813rem;
+	text-transform: uppercase;
+	padding-bottom:1rem
+}
+
+
+.knowledgeSearchResultsCmp .categoryWrapper{
+		border-bottom: 1px solid var(--neutral-300-divider, #DFE1E1);
+}
+.knowledgeSearchResultsCmp .hrLine{
+	border-top: 1px solid var(--neutral-300-divider, #DFE1E1);
+	margin:0px;
+}
+.knowledgeSearchResultsCmp .knowledgeList {
+	display: inline-flex !important;
+}
+.knowledgeSearchResultsCmp .articleTitle{
+	color: var(--primary-600, #007394);
+	font-family: Open Sans;
+	font-size: 1.125rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.5rem; /* 133.333% */
+	padding-bottom:0.5rem;
+	padding-left: 0.5rem;
+}
+.knowledgeSearchResultsCmp  a.articleTitle:visited{
+	color: var(--accent-dark-royal-purple-500, #9E007E);
+}
+.knowledgeSearchResultsCmp a.articleTitle:focus{
+	padding-bottom:0px!important;
+	padding-right:0.5rem;
+}
+
+
+.knowledgeSearchResultsCmp .articleSummary{
+	color: var(--neutral-700, #666);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Open Sans;
+	font-size: 0.875rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.25rem; /* 142.857% */
+	padding-top: 0.5rem;
+	padding-right:1rem;
+}
+.memoPadIcon{
+	color: var(--neutral-500, #999);
+	text-align: center;
+	leading-trim: both;
+	text-edge: cap;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: "Font Awesome 6 Pro"!important;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	padding: 0.4375rem 0.3125rem 0.25rem 0.3125rem;
+}
+
+.knowledgeSearchResultsCmp .viewMoreContainer{
+	padding:0.75rem 1.5rem;
+}
+.knowledgeSearchResultsCmp .viewmore-click {
+	color: var(--primary-600, #007394);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Open Sans;
+	font-size: 0.875rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	text-decoration-line: underline;
+}
+a.viewmore-click:focus, a.viewmore-click:hover, a.viewmore-click:active{
+	text-decoration: underline!important;
+}
+.noResultFoundContainer{
+	max-width: 35.75rem;
+	width: 100%;
+	margin: 0 auto;
+	/*padding: 1.5rem 0rem;*/ /*as per category result wireframe*/
+	padding-bottom:3rem;/* CSH-1399*/
+}
+.noResultFoundContainer .noResultsHeader{
+	color: var(--neutral-800, #333);
+	font-family: Open Sans;
+	font-size: 1.25rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.6875rem; /* 133.333% */
+	padding-bottom:2rem;
+	position: relative;
+	padding-left:36px;
+}
+
+.noResultFoundContainer .bellIcon{
+	color: var(--alert-800, #EA8615);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: "Font Awesome 6 Pro"!important;
+	font-size: 1.25rem;
+	font-style: normal;
+	font-weight: 900;
+	line-height: normal;
+	position: absolute;
+	left: 9px;
+    transform: translateY(19%);
+}
+.noResultFoundContainer .noResultslisttitle{
+	color: var(--neutral-800, #333);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Open Sans;
+	font-size: 0.875rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	padding-bottom:0.5rem;
+}
+.noResultFoundContainer .noResultsListItem{
+	color: var(--neutral-800, #333);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Open Sans;
+	font-size: 0.875rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.25rem; /* 142.857% */
+}
+
+
+.clientAndCategoryName{
+	color : #676a6b;
+}
+
+a.titlecolor{
+	color : #0050a0;
+	font-weight:bold;
+	font-size: 20px;
+	word-wrap: break-word;
+}
+p.summarycolor{
+	color : #676a6b;
+	font-size: 15px;
+	
+}
+.mobc{
+	text-align: center!important;
+}
+
+
+@media  screen and (min-width: 768px) {
+	.knowledgeSearchResultsCmpMain{
+		padding:0rem 2rem;
+	}
+	 .knowledgeSearchInfo
+	{
+		padding: 0rem 0rem;
+		max-width: 75rem;
+		margin: 0 auto;
+	}
+	.knowledgeCatSearchInfo{
+		padding: 0rem 0rem;
+		max-width: 75rem;
+		margin: 0 auto;
+	}
+	 .knowledgeSearchInfo h2, .knowledgeCatSearchInfo h2{
+		font-size: 2.5rem;
+		line-height: 3.375rem; /* 135% */
+
+	}
+	 .knowledgeSearchResultsCmp .searchInfo, .knowledgeCatSearchInfo .searchInfo {
+		font-size: 0.875rem;
+		line-height: 1.25rem; 
+		
+	}
+	.knowledgeSearchInfo .searchInfo {
+		font-size: 0.875rem;
+		line-height: 1.25rem; 
+	}
+	.knowledgeSearchResultsCmp .articleContainer{
+		padding:1.5rem 2rem;
+	}
+	.knowledgeSearchResultsCmp .categoryWrapperPadding{
+		padding:1.5rem;
+	}
+	.knowledgeSearchResultsCmp .articleTitle {
+		font-size: 1.25rem;
+		line-height: 1.6875rem; /* 135% */
+		padding-left:0.5rem;
+		padding-bottom:0rem;
+	}
+	.knowledgeSearchResultsCmp .articleSummary{
+		font-size: 1rem;
+		line-height: 1.375rem; /* 137.5% */
+		padding-right:1rem;
+	}
+	.noResultFoundContainer .bellIcon{
+		font-size: 1.5rem;
+	}
+	.noResultFoundContainer .noResultslisttitle{
+		font-size: 1rem;
+		font-weight: 700;
+	}
+	.noResultFoundContainer .noResultsListItem{
+		font-size: 1rem;
+		line-height: 1.5rem; /* 150% */
+	}
+	.knowledgeSearchResultsCmp .viewMoreContainer{
+		padding:0.75rem 2rem;
+	}
+	.knowledgeSearchResultsCmp .viewmore-click {
+		font-size: 1rem;
+	}
+	.noResultFoundContainer .noResultsHeader{
+	color: var(--neutral-800, #333);
+	font-family: Open Sans;
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 2rem; /* 133.333% */
+	padding-bottom:2rem;
+	position: relative;
+	padding-left:36px;
+}
+.mobc{
+	text-align: right!important;
+}
+}
+
+@media  screen and (min-width: 1024px) {
+	.knowledgeSearchResultsCmpMain{
+		padding:0rem 2rem;
+	}
+	 .knowledgeSearchInfo
+	{
+		padding:0rem 0rem;
+		max-width: 75rem;
+		margin: 0 auto;
+	}
+	.knowledgeCatSearchInfo{
+		padding: 0rem 0rem;
+		max-width: 75rem;
+		margin: 0 auto;
+	}
+	 .knowledgeSearchInfo h2, .knowledgeCatSearchInfo h2 {
+		font-size: 2.5rem;
+		line-height: 3.375rem; /* 135% */
+		
+	}
+	 .knowledgeSearchResultsCmp .searchInfo, .knowledgeCatSearchInfo .searchInfo{
+		font-size: 0.875rem;
+		line-height: 1.25rem; 
+	
+	}
+	.knowledgeSearchInfo .searchInfo {
+		font-size: 0.875rem;
+		line-height: 1.25rem; 
+	}
+	.knowledgeSearchResultsCmp .articleContainer{
+		padding:1.5rem 0
+		
+	}
+	.knowledgeSearchResultsCmp .categoryWrapperPadding{
+		padding:1.5rem;
+	}
+	.knowledgeSearchResultsCmp .articleTitle {
+		font-size: 1.25rem;
+		line-height: 1.6875rem; /* 135% */
+		padding-left:0.5rem;
+		padding-bottom:0rem;
+	}
+	.knowledgeSearchResultsCmp .articleSummary{
+		font-size: 1rem;
+		line-height: 1.375rem; /* 137.5% */
+	}
+	.noResultFoundContainer .bellIcon{
+		font-size: 1.5rem;
+	}
+	.noResultFoundContainer .noResultslisttitle{
+		font-size: 1rem;
+		font-weight: 700;
+	}
+	.noResultFoundContainer .noResultsListItem{
+		font-size: 1rem;
+		line-height: 1.5rem; /* 150% */
+	}
+	.knowledgeSearchResultsCmp .viewMoreContainer{
+		padding:0.75rem 2rem;
+	}
+	.knowledgeSearchResultsCmp .viewmore-click {
+		font-size: 1rem;
+	}
+	.noResultFoundContainer .noResultsHeader{
+	color: var(--neutral-800, #333);
+	font-family: Open Sans;
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 2rem; /* 133.333% */
+	padding-bottom:2rem;
+	position: relative;
+	padding-left:36px;
+}
+.mobc{
+	text-align: right!important;
+}
+
+}

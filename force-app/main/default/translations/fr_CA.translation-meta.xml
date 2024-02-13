@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customLabels>
+        <label>French Acc</label>
+        <name>Accommodations</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Account &amp; Login --></label>
+        <name>Account_Login</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- All Programs --></label>
+        <name>All_Programs</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- All Testing Programs --></label>
+        <name>All_Testing_Programs</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Apply --></label>
+        <name>Apply</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Before you go --></label>
+        <name>Before_you_go</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Begin typing program name or acronym --></label>
+        <name>Begin_typing_program_name_or_acronym</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Browse Top Categories --></label>
+        <name>Browse_Top_Categories</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cancel --></label>
+        <name>Cancel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cannot Link a client --></label>
+        <name>Cannot_Link_a_client</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Can&apos;t find your testing program? --></label>
+        <name>Cant_find_your_testing_program</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Change program --></label>
+        <name>Change_program</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Close --></label>
+        <name>Close</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Comment --></label>
+        <name>Comment</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common Help Topics --></label>
+        <name>Common_Help_Topics</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Contact us --></label>
+        <name>Contact_us</name>
+    </customLabels>
+    <customLabels>
+        <label>https://canada.pearsonvue.com/privacy#cookies-and-web-beacons</label>
+        <name>Cookies_Link</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cookies preferences --></label>
+        <name>Cookies_preferences</name>
+    </customLabels>
+    <customLabels>
+        <label>Copyright 1996 - 2024 Pearson Education Inc. ou ses entreprises affiliées. Tous droits réservés.</label>
+        <name>Copyright_Statement</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Couldnt Find Any Results For Category --></label>
+        <name>Couldnt_Find_Any_Results_For_Category</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Date Posted --></label>
+        <name>Date_Posted</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Date Published --></label>
+        <name>Date_Published</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Deliver in-demand certification exams and unleash opportunity. --></label>
+        <name>Deliver_in_demand_certification_exams_and_unleash_opportunity</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Do you want to continue --></label>
+        <name>Do_you_want_to_continue</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Download --></label>
+        <name>Download</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Exam Results --></label>
+        <name>Exam_Results</name>
+    </customLabels>
+    <customLabels>
+        <label>Articles en vedette</label>
+        <name>Featured_articles</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Find help and get answers. --></label>
+        <name>Find_help_and_get_answers</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FooterLink1 --></label>
+        <name>FooterLink1</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Great --></label>
+        <name>Great</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- HelpHomePopUpMessage --></label>
+        <name>HelpHomePopUpMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Help and support --></label>
+        <name>Help_and_support</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Help and support is in progress --></label>
+        <name>Help_and_support_is_in_progress</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Help home --></label>
+        <name>Help_home</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Here are a few things you can try: --></label>
+        <name>Here_are_a_few_things_you_can_try</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Here&apos;s what we found! --></label>
+        <name>Here_s_what_we_found</name>
+    </customLabels>
+    <customLabels>
+        <label>Bonjour! Comment pouvons-nous aider ?</label>
+        <name>Hi_How_can_we_help</name>
+    </customLabels>
+    <customLabels>
+        <label>Je connais mon programme de test.</label>
+        <name>I_know_my_testing_program</name>
+    </customLabels>
+    <customLabels>
+        <label>Je veux faire des recherches dans tous les programmes.</label>
+        <name>I_want_to_search_across_all_programs</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- If you don&apos;t find what you&apos;re looking for --></label>
+        <name>If_you_don_t_find_what_you_re_looking_for</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Language --></label>
+        <name>Language</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Language Selector Icon --></label>
+        <name>Language_Selector_Icon</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Let&apos;s get you answers. --></label>
+        <name>Let_s_get_you_answers</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Like --></label>
+        <name>Like</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LogoURL --></label>
+        <name>LogoURL</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Multiple Programs --></label>
+        <name>Multiple_Programs</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Multiple testing programs --></label>
+        <name>Multiple_Testing_program</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Need More Help? --></label>
+        <name>Need_More_Help</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No --></label>
+        <name>No</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Oops! No results found. --></label>
+        <name>Oops_No_results_found</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Other available Languages --></label>
+        <name>Other_available_Languages</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Partner with us --></label>
+        <name>Partner_with_us</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Payment --></label>
+        <name>Payment</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Pearson Logo --></label>
+        <name>Pearson_Logo</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Please consider the following search tips: --></label>
+        <name>Please_consider_the_following_search_tips</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Please contact your testing program directly for assistance. --></label>
+        <name>Please_contact_your_testing_program_directly_for_assistance</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Please select an --></label>
+        <name>Please_select_an</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Remove --></label>
+        <name>Remove</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Remove Selected Program --></label>
+        <name>Remove_Selected_Program</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Results --></label>
+        <name>Results</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Review the Spelling of your search terms --></label>
+        <name>Review_the_Spelling_of_your_search_terms</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Review your spelling and spacing. --></label>
+        <name>Review_your_spelling_and_spacing</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SELECTED PROGRAM --></label>
+        <name>SELECTED_PROGRAM</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Scheduling --></label>
+        <name>Scheduling</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Search --></label>
+        <name>Search</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Search and select your testing program --></label>
+        <name>Search_and_select_your_testing_program</name>
+    </customLabels>
+    <customLabels>
+        <label>Rechercher dans nos catégories d’aide</label>
+        <name>Search_by_category</name>
+    </customLabels>
+    <customLabels>
+        <label>Aide et support de recherche</label>
+        <name>Search_help_and_support</name>
+    </customLabels>
+    <customLabels>
+        <label>Mots-clés de recherche, questions et plus encore</label>
+        <name>Search_keywords_questions_and_more</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Search results --></label>
+        <name>Search_results</name>
+    </customLabels>
+    <customLabels>
+        <label>Recherchez des sujets et obtenez des réponses.</label>
+        <name>Search_topics_and_get_answers</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Select Program --></label>
+        <name>Select_Program</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Select testing program --></label>
+        <name>Select_testing_program</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Share --></label>
+        <name>Share</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Show only results for --></label>
+        <name>Show_only_results_for</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Showing --></label>
+        <name>Showing</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Still have questions --></label>
+        <name>Still_have_questions</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Suffix of this website uses --></label>
+        <name>Suffix_of_this_website_uses</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tags --></label>
+        <name>Tags</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Test Day --></label>
+        <name>Test_Day</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Test Day Preparation --></label>
+        <name>Test_Day_Preparation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Testing Program : --></label>
+        <name>Testing_Program</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- The article has not been published in this language --></label>
+        <name>The_article_has_not_been_published_in_this_language</name>
+    </customLabels>
+    <customLabels>
+        <label>Ce site web utilise des cookies. Pour de plus amples informations, consultez notre</label>
+        <name>This_website_uses</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- This will help us get you the most accurate results. --></label>
+        <name>This_will_help_us_get_you_the_most_accurate_results</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Try typing the acronym or long name of your testing program. --></label>
+        <name>Try_typing_the_acronym_or_long_name_of_your_testing_program</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Try using fewer, different, or more general keywords --></label>
+        <name>Try_using_fewer_different_or_more_general_keywords</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- View all --></label>
+        <name>View_all</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- View contact information --></label>
+        <name>View_contact_information</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- We may not support candidate help from this site --></label>
+        <name>We_may_not_support_candidate_help_from_this_site</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- We&apos;re sorry, but we couldn&apos;t find --></label>
+        <name>We_re_sorry_but_we_couldn_t_find</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- We recommend selecting your testing program first --></label>
+        <name>We_recommend_selecting_your_testing_program_first</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Welcome --></label>
+        <name>Welcome</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- What we do --></label>
+        <name>What_we_do</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Yes --></label>
+        <name>Yes</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Your preferred Language --></label>
+        <name>Your_preferred_Language</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- all --></label>
+        <name>all</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- alternative language --></label>
+        <name>alternative_language</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- and --></label>
+        <name>and</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- clear all --></label>
+        <name>clear_all</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- clear search --></label>
+        <name>clear_search</name>
+    </customLabels>
+    <customLabels>
+        <label>politique sur les cookies</label>
+        <name>cookies</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- emailclientnamecom --></label>
+        <name>email_clientname_com</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- filter by --></label>
+        <name>filter_by</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- footer background image --></label>
+        <name>footer_background_image</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- from the following options: --></label>
+        <name>from_the_following_options</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- get assistance --></label>
+        <name>get_assistance</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- helpSupport --></label>
+        <name>helpSupport</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- label None --></label>
+        <name>label_None</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- modalPopup banner message --></label>
+        <name>modalPopup_banner_message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- of --></label>
+        <name>of</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- opens in new window --></label>
+        <name>opens_in_new_window</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- pearsonvue.com --></label>
+        <name>pearsonvue_com</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- phonenumber --></label>
+        <name>phonenumber</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- results for --></label>
+        <name>results_for</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- results found for --></label>
+        <name>results_found_for</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- search bar placeholder --></label>
+        <name>search_bar_placeholder</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- search program icon --></label>
+        <name>search_program_icon</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- skip to main content --></label>
+        <name>skip_to_main_content</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- view more --></label>
+        <name>view_more</name>
+    </customLabels>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Knowledge_After_flow</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Knowledge_After_save_update</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Knowledge_Before_Flow</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Prevent_Client_link_on_Published_or_Archieved_Articles</fullName>
+    </flowDefinitions>
+</Translations>

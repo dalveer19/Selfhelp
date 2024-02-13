@@ -1,0 +1,320 @@
+.searchBoxComponent{
+	padding-bottom:2.5rem;
+}
+
+.searchBoxComponent .slds-input__icon_right {
+	order: -1;
+	left: 2%;
+	 padding-top: 0.2rem;
+}
+
+.alignViewAll {
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	color: var(--primary-600, #007394) !important;
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+
+	/* Text link/Underlined/Semibold--16 */
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	text-decoration-line: underline !important;
+}
+
+.slds-media__body {
+	color: var(--neutral-900-black, #000);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	word-wrap: break-word;
+}
+
+.searchBoxComponent .slds-input { 
+	color: var(--neutral-700, #000)!important;
+	font-feature-settings: 'clig' off, 'liga' off !important;
+	height: 3.5rem;
+	padding: 1rem 1.125rem 1rem 2.5rem;
+	align-items: center;
+	gap: 1rem;
+	align-self: stretch;
+	border-radius: 0.375rem;
+	border: 1px solid var(--neutral-700, #666);
+	background: var(--neutral-50-white, #FFF);
+	line-height: normal !important;
+}
+
+.searchBoxComponent .slds-input::placeholder {
+	color: var(--neutral-700, #666);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Open Sans;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-overflow: ellipsis;
+
+}
+.searchBoxComponent	.fa-magnifying-glass:before{
+		position: absolute!important;
+		top: 22.5px!important; /* CSH-534 mobile UI fix */
+		left: 16px!important;
+		color: var(--neutral-700, #666)!important;
+		font-feature-settings: 'clig' off, 'liga' off;
+		font-size: 1rem;
+		font-style: normal!important;
+	
+		line-height: normal!important;
+		
+	}
+.faSearchIcon {
+    color: var(--neutral-700, #666);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Font Awesome 6 Pro"!important;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.searchBoxComponent .slds-input{
+	border-radius: 0.375rem;
+	border: 1px solid var(--neutral-700, #666);
+	background: #FFF;
+	color: var(--neutral-700, #666);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Open Sans;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.5rem; /* 100% */
+}
+.searchBoxComponent .slds-input:hover {
+		border-radius: 0.375rem;
+	border: 3px solid var(--neutral-700, #666)!important;
+	color: var(--neutral-700, #666);
+} 
+.searchBoxComponent .slds-input:focus {
+	border-radius: 0.375rem;
+border: 3px solid var(--primary-600, #007394);
+background: #FFF;
+color: var(--neutral-900-black, #000)!important;
+} 
+.searchBoxComponent .slds-input:active {
+border-radius: 0.375rem;
+border: 1px solid var(--neutral-700, #666) !important;
+background: #FFF;
+color: var(--neutral-900-black, #000)!important;
+}
+.closeSearchIcon{
+    color: var(--neutral-700, #666);
+text-align: center;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: "Font Awesome 6 Pro"!important;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+}
+
+.slds-listbox_vertical .slds-listbox__option_plain{
+	padding: 0.8125rem 1rem;
+}
+.slds-listbox_vertical .slds-listbox__option:hover{
+	background: var(--primary-50, #E4FAFF);
+}
+ .slds-listbox_vertical .slds-listbox__option.slds-has-focus{
+	background: var(--primary-50, #E4FAFF)!important;
+}
+.slds-listbox_vertical .slds-listbox__option:focus{
+	background: var(--primary-50, #E4FAFF);
+	box-shadow: 0px 0px 2px 4px #219EA3 inset;
+}
+
+
+.closeSearchIconWrap:hover .closeSearchIcon{
+	border-radius: 1.5625rem;
+	background:#F0F0F0;
+	border: #C2C2C2;
+	padding: 0.5rem;
+}
+.closeSearchIconWrap:active .closeSearchIcon{
+	border-radius: 1.5625rem;
+	background:#FFF;
+	border:1px solid #C2C2C2;
+	padding: 0.5rem;
+}
+.closeSearchIconWrap:hover  {
+	top: 40%!important;
+    outline: none!important;
+    right: 1.25rem;
+}
+.closeSearchIconWrap:active  {
+	top: 39%!important;
+    outline: none!important;
+    right: 1.3rem;
+}
+.closeSearchIconWrap:focus .closeSearchIcon{
+	border-radius: 1.5625rem;
+	outline: none!important;
+	box-shadow: 0px 0px 2px 3px #219EA3;
+	padding: 0.5rem;
+}
+.closeSearchIconWrap:focus-visible .closeSearchIcon{
+	border-radius: 1.5625rem;
+	outline: none!important;
+	box-shadow: 0px 0px 2px 3px #219EA3;
+	padding: 0.5rem;
+
+}
+.closeSearchIconWrap:focus  {
+	top: 36%!important;
+	outline: none!important;
+	right: 1.25rem;
+}
+.closeSearchIconWrap:focus-visible {
+	top: 36%!important;
+	outline: none!important;
+	right: 1.25rem;
+}
+.rightArrowIcon{
+	color: var(--primary-600, #007394);
+text-align: center;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: "Font Awesome 6 Pro"!important;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-left:0.5rem;
+padding-top:0.3rem;
+}
+
+@media  screen and (min-width: 480px) {
+
+}
+
+@media  screen and (min-width: 768px) {
+	.searchBoxComponent{
+	padding-bottom:3.38rem;
+	}
+
+	.searchBoxComponent .slds-input { 
+	color: var(--neutral-700, #000)!important;
+	font-feature-settings: 'clig' off, 'liga' off !important;
+	min-height: 4.625rem;
+	padding: 1rem 1rem 1rem 3.3rem;
+	align-items: center;
+	gap: 1rem;
+	align-self: stretch;
+	border-radius: 0.375rem;
+	border: 1px solid var(--neutral-700, #666);
+	background: var(--neutral-50-white, #FFF);
+	line-height: normal !important;
+	font-size: 1.5rem;
+	}
+
+	.searchBoxComponent .slds-input::placeholder {
+	color: var(--neutral-700, #666);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Open Sans;
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	}
+	.searchBoxComponent .slds-input__icon_right {
+	 padding-top: 0rem;
+	}
+	.searchBoxComponent	.fa-magnifying-glass:before{
+		position: absolute!important;
+		top: 26px!important;
+		left: 16px!important;
+		color: var(--neutral-700, #666)!important;
+		font-feature-settings: 'clig' off, 'liga' off;
+		font-size: 1.5rem;
+		font-style: normal!important;
+	
+		line-height: normal!important;
+		
+	}
+	.faSearchIcon{
+	  font-size: 1.5rem;
+	}
+		
+.closeSearchIcon{
+    color: var(--neutral-700, #666);
+text-align: center;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: "Font Awesome 6 Pro"!important;
+font-size: 1rem;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+}
+
+}
+
+@media  screen and (min-width: 1024px) {
+	.searchBoxComponent{
+		padding-bottom:3.38rem;
+	}
+	.searchHeaderComponentWrapper .SearchBarSection .searchBar .searchBoxComponent{
+		padding-bottom:0px!important;
+	}
+
+	.searchBoxComponent .slds-input { 
+	color: var(--neutral-700, #000)!important;
+	font-feature-settings: 'clig' off, 'liga' off !important;
+	min-height: 4.625rem;
+	padding: 1rem 3rem 1rem 3.3rem;
+	align-items: center;
+	gap: 1rem;
+	align-self: stretch;
+	border-radius: 0.375rem;
+	border: 1px solid var(--neutral-700, #666);
+	background: var(--neutral-50-white, #FFF);
+	line-height: normal !important;
+	font-size: 1.5rem;
+	}
+
+	.searchBoxComponent .slds-input::placeholder {
+		color: var(--neutral-700, #666)!important;
+		font-feature-settings: 'clig' off, 'liga' off;
+		font-family: Open Sans;
+		font-size: 1.5rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+	.searchBoxComponent .fa-magnifying-glass:before{
+		position: absolute!important;
+		top: 26px!important;
+		left: 16px!important;
+		color: var(--neutral-700, #666)!important;
+		font-feature-settings: 'clig' off, 'liga' off;
+		font-size: 1.5rem;
+		font-style: normal!important;
+		line-height: normal!important;
+		
+	}
+	.faSearchIcon{
+	  font-size: 1.5rem;
+	}
+	
+.closeSearchIcon{
+    color: var(--neutral-700, #666);
+text-align: center;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: "Font Awesome 6 Pro"!important;
+font-size: 1rem;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+}
+
+}

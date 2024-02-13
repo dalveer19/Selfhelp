@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>language__c</fullName>
+    <description>select this to save the language</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>language</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ar_AE</fullName>
+                <default>false</default>
+                <label>Arabic</label>
+            </value>
+            <value>
+                <fullName>en_US</fullName>
+                <default>true</default>
+                <label>English - United States</label>
+            </value>
+            <value>
+                <fullName>en_GB</fullName>
+                <default>false</default>
+                <label>English - United Kingdom</label>
+            </value>
+            <value>
+                <fullName>fr_CA</fullName>
+                <default>false</default>
+                <label>French Canadian</label>
+            </value>
+            <value>
+                <fullName>ja</fullName>
+                <default>false</default>
+                <label>Japanese</label>
+            </value>
+            <value>
+                <fullName>ko</fullName>
+                <default>false</default>
+                <label>Korean</label>
+            </value>
+            <value>
+                <fullName>zh_CN</fullName>
+                <default>false</default>
+                <label>Simplified Chinese</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

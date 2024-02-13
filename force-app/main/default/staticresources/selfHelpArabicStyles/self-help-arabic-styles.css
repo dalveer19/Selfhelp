@@ -1,0 +1,329 @@
+.arabic-class .americaIcon[c-footer_SH_footer_SH]{
+	padding-right: 0;
+	padding-left: 0.25rem;
+}
+.arabic-class .searchHeaderComponent[c-searchResultsSearchContainer_searchResultsSearchContainer] .LargeDeviceMargin[c-searchResultsSearchContainer_searchResultsSearchContainer]{
+	margin-right: 0;
+}
+.arabic-class .noResultFoundContainer[c-shp_ArticlesSearchResultComponent_shp_ArticlesSearchResultComponent] .bellIcon[c-shp_ArticlesSearchResultComponent_shp_ArticlesSearchResultComponent]{
+	left: auto;
+    right: 9px
+}
+.arabic-class .closeSearchIconWrap:hover[c-searchBarWithSuggestionsChildV1_searchBarWithSuggestionsChildV1]{
+	right: auto;
+	left: 1.25rem;
+}
+.arabic-class .closeSearchIconWrap:focus[c-searchBarWithSuggestionsChildV1_searchBarWithSuggestionsChildV1]{
+	right: auto;
+	left: 1.25rem;
+}
+.arabic-class .languageModal[c-shp_languageSelector_shp_languageSelector] .selectLang[c-shp_languageSelector_shp_languageSelector]{
+	text-align: right;
+}
+.arabic-class .headerComponent[c-header_SH_header_SH] .globe_icon[c-header_SH_header_SH] i:focus[c-header_SH_header_SH]+.langIconTooltipOnFocus[c-header_SH_header_SH]{
+	right: auto;
+	left: 10px;
+}
+.arabic-class .modalBox[c-modalPopup_modalPopup] .iconCloseSearchBar[c-modalPopup_modalPopup]{
+	right: auto;
+	left: 8px;
+}
+.arabic-class .header-text[c-modalPopup_modalPopup]{
+	text-align: right;
+}
+.arabic-class .arrowIcon[c-modalPopup_modalPopup]{
+	margin-right: auto;
+}
+.arabic-class .fa-chevron-right.arrowIcon[c-modalPopup_modalPopup]:before{
+	transform: rotate(180deg);
+    display: inline-block;
+}
+.arabic-class .modalBox .bgImage{
+	transform: scaleX(-1);
+}
+ 
+.arabic-class .modalBox .arrowIcon{
+	margin-left: 2px;
+}
+.arabic-class .modalBox  .modalHeader4{
+	text-align:right!important
+}
+.arabic-class .modalBox  .modalDesc{
+	text-align:right!important
+}
+.arabic-class  .modalBox .iconCloseSearchBar {
+    position: absolute;
+    left: 8px;
+    top: 24%;
+}
+ 
+.arabic-class  .modalBox .noResultFound {
+   text-align: right;
+}
+.arabic-class .searchContainer[c-articleDetailPageHeaderCmpt_articleDetailPageHeaderCmpt]{
+	right: auto;
+	left: 4%;
+}
+.arabic-class .divPadding[c-pageNavigationParent_pageNavigationParent]{
+	padding-right: 0.05rem;
+    padding-left: 0.25rem;
+}
+.arabic-class .slds-breadcrumb[c-pageNavigationParent_pageNavigationParent] .slds-breadcrumb__item[c-pageNavigationParent_pageNavigationParent]::before{
+	padding-right: 0.05rem !important;
+    padding-left: 0.25rem !important;
+}
+.arabic-class .wrapperModal[c-articleDetailPageModal_articleDetailPageModal]{
+	text-align: left;
+}
+.arabic-class .navOverlay .modalContainer .modalHeaderBox {
+	    right: 88% !important;
+}
+ 
+.arabic-class .navOverlay .pr1_5{
+	padding-left:1.5rem;
+}
+.arabic-class .searchProgramIconTooltip[c-articleDetailPageHeaderCmpt_articleDetailPageHeaderCmpt]{
+	right: auto;
+	left: 0;
+}
+.arabic-class .slds-col.flexNone.pr15.mobpb1[c-articleDetailPageModal_articleDetailPageModal]{
+	padding-right: 0 !important;
+}
+.arabic-class .slds-col.flexNone.pr15.mobpb1[c-articleDetailPageModal_articleDetailPageModal]+.slds-col.flexNone{
+	padding-right: 1.5rem !important;
+}
+.arabic-class .slds-radio [value=iknow][type=radio]:focus+label:after{
+	left: auto;
+	right: 35px;
+}
+.arabic-class .siteforceLoadingBalls .loadingBall {
+    margin-right: -10px!important;
+}
+.arabic-class .siteforceSpinnerManager .mask{
+	margin-right: 0;
+}
+/*Language Selector */ 
+.arabic-class  .languageModal .img{
+	transform: scaleX(-1);
+	left: 0%;
+	right: auto;
+}
+ 
+.arabic-class  .languageModal .slds-modal__header .slds-modal__close {
+	left:0.5rem;
+	right: auto !important;
+}
+ 
+.arabic-class  .languageModal  .header3{
+	text-align: right;
+}
+
+.arabic-class .languageModal[c-shp_languageSelector_shp_languageSelector] .prefLanguage[c-shp_languageSelector_shp_languageSelector]{
+	text-align: right;
+}
+ 
+.arabic-class  .languageModal  .languageModal .prefLanguage {
+	text-align:right;	
+}
+ 
+.arabic-class  .languageModal  .languageModal .selectLang {
+	text-align:right;	
+}
+.arabic-class .searchBoxComponent[c-searchBarWithSuggestionsChildV1_searchBarWithSuggestionsChildV1] .slds-input[c-searchBarWithSuggestionsChildV1_searchBarWithSuggestionsChildV1]{
+	padding: 1rem 3rem 1rem 3.3rem;
+}
+.arabic-class .searchBoxComponent[c-searchBarWithSuggestionsChildV1_searchBarWithSuggestionsChildV1] .fa-magnifying-glass[c-searchBarWithSuggestionsChildV1_searchBarWithSuggestionsChildV1]:before{
+	left: auto !important;
+	right: 16px;
+}
+.arabic-class .modalBox[c-modalPopup_modalPopup] .faSearchIcon[c-modalPopup_modalPopup] {
+    left: auto;
+	right: 15px;
+}
+.arabic-class .modalBox .searchInput{
+	padding: 1rem 2.3rem 1rem 1rem!important;
+}
+.arabic-class .mob_alignpm{
+	text-align: right;
+}
+.arabic-class .noResultFoundContainer[c-shp_ArticlesSearchResultComponent_shp_ArticlesSearchResultComponent] .noResultsHeader[c-shp_ArticlesSearchResultComponent_shp_ArticlesSearchResultComponent]{
+	padding-left: 0;
+	padding-right: 36px;
+}
+.arabic-class .slds-dropdown-trigger_click.slds-is-open .slds-dropdown{
+	right: auto;
+    left: 50%;
+}
+.arabic-class .searchHeaderComponent[c-knowledgeArticleSearchContainer_knowledgeArticleSearchContainer] .rightBg[c-knowledgeArticleSearchContainer_knowledgeArticleSearchContainer]{
+	right: auto;
+    left: 0;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.arabic-class .bg-left[c-footer_SH_footer_SH] img[c-footer_SH_footer_SH]{
+	-webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.arabic-class .img[c-footer_SH_footer_SH]{
+	-webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    right: auto;
+    left: 0;
+}
+.arabic-class .arcClass[c-searchResultsSearchContainer_searchResultsSearchContainer]{
+	-webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    right: auto;
+    left: 0;
+}
+.arabic-class .ArticleDetailClass[c-knowledgeArticleDetails_knowledgeArticleDetails]{
+	-webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    right: auto;
+    left: 0;
+}
+.arabic-class .cmnHelpTopicsHeading[c-articleDetailPageModal_articleDetailPageModal]{
+	text-align: right;
+}
+.arabic-class .slds-col.pb1[c-articleDetailPageModal_articleDetailPageModal]{
+	text-align: right;
+}
+.arabic-class .clientClass[c-knowledgeArticleSearchContainer_knowledgeArticleSearchContainer]{
+	-webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    right: auto;
+    left: 0;
+}
+.arabic-class .text-right.searchInfo[c-shp_ArticlesSearchResultComponent_shp_ArticlesSearchResultComponent]{
+	text-align: left !important;
+}
+
+
+.arabic-class .navOverlay .slds-modal__footer{
+	text-align:left!important;
+}
+.arabic-class .overlaySearch .closeSearchIconWrap{
+	right:86%!important
+}
+.arabic-class .headerContainer .testingProName{
+	text-align:right!important;
+}
+.arabic-class .slds-media__body{
+	text-align:right!important;
+}
+.arabic-class .wrapperModal .closeWrap{
+	margin-left:0.7rem!important;
+}
+.arabic-class .headerComponent .slds-page-header__row .slds-text-align_right{
+			text-align:left!important
+	}
+	
+	.arabic-class .arrowUpRight{
+		padding-right: 0.25rem!important;
+	}
+	.arabic-class .footerSubWrap ul.slds-float_left{
+		text-align:right!important;
+		width:100%!important
+	}
+	.arabic-class .modalBox .modalHeaderBox .slds-float_right {
+		float:left!important
+	}
+	
+	.arabic-class .searchHeaderComponent .searchBar .searchBoxComponent .closeSearchIconWrap{
+	right: 83%;
+}
+
+.arabic-class .slds-breadcrumb .slds-list__item>a, .arabic-class .slds-breadcrumb .slds-breadcrumb__item>a {
+    padding-right: 0.8rem!important;
+}
+
+.arabic-class .slds-breadcrumb[c-pageNavigationParent_pageNavigationParent] .slds-breadcrumb__item[c-pageNavigationParent_pageNavigationParent]::before {
+	right: 0.2rem!important;
+}
+.arabic-class  .languageModal[c-shp_languageSelector_shp_languageSelector] .cancelButton[c-shp_languageSelector_shp_languageSelector] {
+	margin-right:0rem!important;
+}
+.arabic-class .modalBox .modalHeaderBox{
+margin-bottom:-0.7px!important;
+}
+
+.arabic-class .modalBox .topPaddingSearch {
+    padding-top: 2rem;
+    padding-bottom: 7px!important;
+}
+.arabic-class .searchHeaderComponent .testProInfo {
+	text-align:center!important;
+}
+.arabic-class .noResultFoundContainer ul.slds-list_dotted {
+    padding-right: 2rem!important;
+}
+.arabic-class .noResultFoundContainer .noResultslisttitle{
+	padding-right:2rem!important;
+}
+@media  screen and (max-width: 767px){
+	.arabic-class .slds-col.flexNone.pr15.mobpb1[c-articleDetailPageModal_articleDetailPageModal]{
+		width: 100%;
+	}
+	.arabic-class .slds-col.flexNone.pr15.mobpb1[c-articleDetailPageModal_articleDetailPageModal] .slds-form-element__control{
+		text-align: right;
+	}
+	.arabic-class .slds-col.flexNone.pr15.mobpb1[c-articleDetailPageModal_articleDetailPageModal]+.slds-col.flexNone{
+		width: 100%;
+		padding-right: 0 !important;
+	}
+	.arabic-class .slds-col.flexNone.pr15.mobpb1[c-articleDetailPageModal_articleDetailPageModal]+.slds-col.flexNone .slds-form-element__control{
+		text-align: right;
+	}
+	.arabic-class .mob_alignpm{
+		margin-left: 0 !important;
+		text-align: center;
+	}
+
+
+}
+@media  screen and (min-width: 768px){	
+	.arabic-class .searchHeaderComponent .largeDeviceAlign{
+        text-align: left !important;
+    }
+	.arabic-class .searchHeaderComponent .LargeDeviceMargin{
+        margin-left: 0 !important;
+        margin-right: 4rem;
+    }	
+		.arabic-class .headerComponent .slds-page-header__row .slds-text-align_right{
+			text-align:left!important
+	}
+	.arabic-class .navOverlay .slds-modal__footer{
+		text-align:left!important;
+	}
+	
+	.arabic-class .overlaySearch .closeSearchIconWrap{
+		right:92%!important
+	}
+	.arabic-class .headerContainer .testingProName{
+		text-align:right!important;
+	}
+	.arabic-class .slds-media__body{
+		text-align:right!important;
+	}
+	.arabic-class .searchHeaderComponent .searchBar .searchBoxComponent .closeSearchIconWrap{
+	right: 90%!important;
+}
+	.arabic-class  .languageModal[c-shp_languageSelector_shp_languageSelector] .cancelButton[c-shp_languageSelector_shp_languageSelector] {
+	margin-right:1rem!important;
+}
+}
+@media  screen and (min-width: 1024px){	
+	.arabic-class .needMoreHelpSection[c-needMoreHelpCmpt_needMoreHelpCmpt] .needMore[c-needMoreHelpCmpt_needMoreHelpCmpt]{
+		padding-left: 0;
+		padding-right: 1.5rem;
+	}
+		.arabic-class .overlaySearch  .closeSearchIconWrap{
+		right:94%!important
+	}
+	.arabic-class .searchHeaderComponent .searchBar .searchBoxComponent .closeSearchIconWrap{
+	right: 92%!important;
+}
+	.arabic-class  .languageModal[c-shp_languageSelector_shp_languageSelector] .cancelButton[c-shp_languageSelector_shp_languageSelector] {
+	margin-right:1rem!important;
+}
+}

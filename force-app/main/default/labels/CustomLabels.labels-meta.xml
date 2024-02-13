@@ -1,0 +1,888 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Accommodations</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Accommodations</shortDescription>
+        <value>Accommodations</value>
+    </labels>
+    <labels>
+        <fullName>Account_Login</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account &amp; Login</shortDescription>
+        <value>Account &amp; Login</value>
+    </labels>
+    <labels>
+        <fullName>All_Programs</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>All Programs</shortDescription>
+        <value>ALL TESTING PROGRAMS</value>
+    </labels>
+    <labels>
+        <fullName>All_Testing_Programs</fullName>
+        <categories>Self Help</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>All Testing Programs</shortDescription>
+        <value>All Testing Programs</value>
+    </labels>
+    <labels>
+        <fullName>Apply</fullName>
+        <categories>Self Help</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Apply</shortDescription>
+        <value>Apply</value>
+    </labels>
+    <labels>
+        <fullName>Before_you_go</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Before you go</shortDescription>
+        <value>Before you go...</value>
+    </labels>
+    <labels>
+        <fullName>Begin_typing_program_name_or_acronym</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Begin typing program name or acronym</shortDescription>
+        <value>Begin typing program name or acronym</value>
+    </labels>
+    <labels>
+        <fullName>Browse_Top_Categories</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Browse Top Categories</shortDescription>
+        <value>Browse Top Categories</value>
+    </labels>
+    <labels>
+        <fullName>Cancel</fullName>
+        <categories>Custom Case Page, Labels, buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Cannot_Link_a_client</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot Link a client</shortDescription>
+        <value>Cannot link the client as article is either published or achieved</value>
+    </labels>
+    <labels>
+        <fullName>Cant_find_your_testing_program</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Can&apos;t find your testing program?</shortDescription>
+        <value>Still can’t find your testing program?</value>
+    </labels>
+    <labels>
+        <fullName>Change_program</fullName>
+        <categories>Self Help</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Change program</shortDescription>
+        <value>Change program</value>
+    </labels>
+    <labels>
+        <fullName>Close</fullName>
+        <categories>Custom Case Page, Labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Close</shortDescription>
+        <value>Close</value>
+    </labels>
+    <labels>
+        <fullName>Comment</fullName>
+        <categories>Custom Case Page, Labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Comment</shortDescription>
+        <value>Comment</value>
+    </labels>
+    <labels>
+        <fullName>Common_Help_Topics</fullName>
+        <categories>selfhelp</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Common Help Topics</shortDescription>
+        <value>Common help topics</value>
+    </labels>
+    <labels>
+        <fullName>Contact_us</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contact us</shortDescription>
+        <value>Contact us</value>
+    </labels>
+    <labels>
+        <fullName>Cookies_Link</fullName>
+        <categories>SelfHelpSite</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cookies_Link</shortDescription>
+        <value>https://home.pearsonvue.com/privacy#cookies-and-web-beacons</value>
+    </labels>
+    <labels>
+        <fullName>Cookies_preferences</fullName>
+        <categories>Self Help footer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cookies preferences</shortDescription>
+        <value>Cookies preferences</value>
+    </labels>
+    <labels>
+        <fullName>Copyright_Statement</fullName>
+        <categories>SelfHelpSite</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Copyright Statement</shortDescription>
+        <value>Copyright 1996 - 2024 Pearson Education Inc. or its affiliate(s).  All rights reserved.</value>
+    </labels>
+    <labels>
+        <fullName>Couldnt_Find_Any_Results_For_Category</fullName>
+        <categories>SelfHelpSite</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Couldnt Find Any Results For Category</shortDescription>
+        <value>We&apos;re sorry, but we couldn&apos;t find any results for</value>
+    </labels>
+    <labels>
+        <fullName>Date_Posted</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Date Posted</shortDescription>
+        <value>PUBLISHED DATE:</value>
+    </labels>
+    <labels>
+        <fullName>Date_Published</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Date Published</shortDescription>
+        <value>Date Published:</value>
+    </labels>
+    <labels>
+        <fullName>Deliver_in_demand_certification_exams_and_unleash_opportunity</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Deliver in-demand certification exams and unleash opportunity.</shortDescription>
+        <value>Deliver in-demand certification exams and unleash opportunity.</value>
+    </labels>
+    <labels>
+        <fullName>Do_you_want_to_continue</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Do you want to continue</shortDescription>
+        <value>Do you want to continue?</value>
+    </labels>
+    <labels>
+        <fullName>Download</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Download</shortDescription>
+        <value>Download</value>
+    </labels>
+    <labels>
+        <fullName>Exam_Results</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Exam Results</shortDescription>
+        <value>Exam Results</value>
+    </labels>
+    <labels>
+        <fullName>Featured_articles</fullName>
+        <categories>Self Help</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Featured articles</shortDescription>
+        <value>Featured articles</value>
+    </labels>
+    <labels>
+        <fullName>Find_help_and_get_answers</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Find help and get answers.</shortDescription>
+        <value>Find help and get answers.</value>
+    </labels>
+    <labels>
+        <fullName>FooterLink1</fullName>
+        <categories>SelfHelpSite</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FooterLink1</shortDescription>
+        <value>https://www.google.com</value>
+    </labels>
+    <labels>
+        <fullName>Great</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Great</shortDescription>
+        <value>Great!</value>
+    </labels>
+    <labels>
+        <fullName>HelpHomePopUpMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HelpHomePopUpMessage</shortDescription>
+        <value>Returning to the Help and Support home page will clear the testing program selection you&apos;ve made.</value>
+    </labels>
+    <labels>
+        <fullName>Help_and_support</fullName>
+        <categories>Self Help footer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Help and support</shortDescription>
+        <value>Help and support</value>
+    </labels>
+    <labels>
+        <fullName>Help_and_support_is_in_progress</fullName>
+        <categories>SelfHelpSite</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Help and support is in progress</shortDescription>
+        <value>Help and Support is in-progress:</value>
+    </labels>
+    <labels>
+        <fullName>Help_home</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Help home</shortDescription>
+        <value>Help home</value>
+    </labels>
+    <labels>
+        <fullName>Here_are_a_few_things_you_can_try</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Here are a few things you can try:</shortDescription>
+        <value>Please consider the following search tips:</value>
+    </labels>
+    <labels>
+        <fullName>Here_s_what_we_found</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Here&apos;s what we found!</shortDescription>
+        <value>Here&apos;s what we found!</value>
+    </labels>
+    <labels>
+        <fullName>Hi_How_can_we_help</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Hi! How can we help?</shortDescription>
+        <value>Hi! How can we help?</value>
+    </labels>
+    <labels>
+        <fullName>I_know_my_testing_program</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>I know my testing program</shortDescription>
+        <value>I know my testing program.</value>
+    </labels>
+    <labels>
+        <fullName>I_want_to_search_across_all_programs</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>I want to search across all programs</shortDescription>
+        <value>I want to search across all programs.</value>
+    </labels>
+    <labels>
+        <fullName>If_you_don_t_find_what_you_re_looking_for</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>If you don&apos;t find what you&apos;re looking for</shortDescription>
+        <value>If you don&apos;t find what you&apos;re looking for in Help and Support, contact customer service.</value>
+    </labels>
+    <labels>
+        <fullName>Language</fullName>
+        <categories>Community, Case, Knowledge</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Language</shortDescription>
+        <value>Language</value>
+    </labels>
+    <labels>
+        <fullName>Language_Selector_Icon</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Language Selector Icon</shortDescription>
+        <value>Language Selector</value>
+    </labels>
+    <labels>
+        <fullName>Let_s_get_you_answers</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Let&apos;s get you answers.</shortDescription>
+        <value>Let&apos;s get you answers.</value>
+    </labels>
+    <labels>
+        <fullName>Like</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Like</shortDescription>
+        <value>Like</value>
+    </labels>
+    <labels>
+        <fullName>LogoURL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LogoURL</shortDescription>
+        <value>https://wsr.pearsonvue.com/pvueImages/webII/logos/{0}.gif</value>
+    </labels>
+    <labels>
+        <fullName>Multiple_Programs</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Multiple Programs</shortDescription>
+        <value>MULTIPLE TESTING PROGRAMS</value>
+    </labels>
+    <labels>
+        <fullName>Multiple_Testing_program</fullName>
+        <categories>Self Help</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Multiple testing programs</shortDescription>
+        <value>Multiple testing programs</value>
+    </labels>
+    <labels>
+        <fullName>Need_More_Help</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Need More Help?</shortDescription>
+        <value>Need more help?</value>
+    </labels>
+    <labels>
+        <fullName>No</fullName>
+        <categories>Tasking process dialog box</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No</shortDescription>
+        <value>No</value>
+    </labels>
+    <labels>
+        <fullName>Oops_No_results_found</fullName>
+        <categories>selfhelp modalpopup</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Oops! No results found.</shortDescription>
+        <value>Oops! No results found!</value>
+    </labels>
+    <labels>
+        <fullName>Other_available_Languages</fullName>
+        <categories>Self Help</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Other available Languages</shortDescription>
+        <value>Other available Languages</value>
+    </labels>
+    <labels>
+        <fullName>Partner_with_us</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Partner with us</shortDescription>
+        <value>Partner with us</value>
+    </labels>
+    <labels>
+        <fullName>Payment</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Payment</shortDescription>
+        <value>Payment</value>
+    </labels>
+    <labels>
+        <fullName>Pearson_Logo</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Pearson Logo</shortDescription>
+        <value>Pearson Logo</value>
+    </labels>
+    <labels>
+        <fullName>Please_consider_the_following_search_tips</fullName>
+        <categories>selfhelp modalpopup</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Please consider the following search tips:</shortDescription>
+        <value>Please consider the following search tips:</value>
+    </labels>
+    <labels>
+        <fullName>Please_contact_your_testing_program_directly_for_assistance</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Please contact your testing program directly for assistance.</shortDescription>
+        <value>Please contact your testing program directly for assistance.</value>
+    </labels>
+    <labels>
+        <fullName>Please_select_an</fullName>
+        <categories>SelfHelpSite</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Please select an</shortDescription>
+        <value>Please select an</value>
+    </labels>
+    <labels>
+        <fullName>Remove</fullName>
+        <categories>Page, Labels, buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Remove</shortDescription>
+        <value>Remove</value>
+    </labels>
+    <labels>
+        <fullName>Remove_Selected_Program</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Remove Selected Program</shortDescription>
+        <value>Remove Selected Program</value>
+    </labels>
+    <labels>
+        <fullName>Results</fullName>
+        <categories>Results</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Results</shortDescription>
+        <value>results</value>
+    </labels>
+    <labels>
+        <fullName>Review_the_Spelling_of_your_search_terms</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Review the Spelling of your search terms</shortDescription>
+        <value>Review the spelling and spacing of your search terms</value>
+    </labels>
+    <labels>
+        <fullName>Review_your_spelling_and_spacing</fullName>
+        <categories>selfhelp modalpopup</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Review your spelling and spacing.</shortDescription>
+        <value>Review your spelling and spacing.</value>
+    </labels>
+    <labels>
+        <fullName>SELECTED_PROGRAM</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SELECTED PROGRAM</shortDescription>
+        <value>SELECTED PROGRAM</value>
+    </labels>
+    <labels>
+        <fullName>Scheduling</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Scheduling</shortDescription>
+        <value>Scheduling</value>
+    </labels>
+    <labels>
+        <fullName>Search</fullName>
+        <categories>Advanced Search Labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search</shortDescription>
+        <value>Search</value>
+    </labels>
+    <labels>
+        <fullName>Search_and_select_your_testing_program</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search and select your testing program</shortDescription>
+        <value>Search and select your testing program.</value>
+    </labels>
+    <labels>
+        <fullName>Search_by_category</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search by category</shortDescription>
+        <value>Search our help categories</value>
+    </labels>
+    <labels>
+        <fullName>Search_help_and_support</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search help and support</shortDescription>
+        <value>Search help and support</value>
+    </labels>
+    <labels>
+        <fullName>Search_keywords_questions_and_more</fullName>
+        <categories>Search keywords, questions, and more</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search keywords questions and more</shortDescription>
+        <value>Search keywords, questions, and more</value>
+    </labels>
+    <labels>
+        <fullName>Search_results</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search results</shortDescription>
+        <value>Search results</value>
+    </labels>
+    <labels>
+        <fullName>Search_topics_and_get_answers</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search topics and get answers.</shortDescription>
+        <value>Search topics and get answers.</value>
+    </labels>
+    <labels>
+        <fullName>Select_Program</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select Program</shortDescription>
+        <value>Select Program</value>
+    </labels>
+    <labels>
+        <fullName>Select_testing_program</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select testing program</shortDescription>
+        <value>Select testing program</value>
+    </labels>
+    <labels>
+        <fullName>Share</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Share</shortDescription>
+        <value>Share</value>
+    </labels>
+    <labels>
+        <fullName>Show_only_results_for</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Show only results for</shortDescription>
+        <value>Show only results for</value>
+    </labels>
+    <labels>
+        <fullName>Showing</fullName>
+        <categories>Advanced Search, translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Showing</shortDescription>
+        <value>Showing</value>
+    </labels>
+    <labels>
+        <fullName>Still_have_questions</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Still have questions</shortDescription>
+        <value>Still have questions?</value>
+    </labels>
+    <labels>
+        <fullName>Suffix_of_this_website_uses</fullName>
+        <categories>SelfHelpSite</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Suffix of this website uses</shortDescription>
+        <value>.</value>
+    </labels>
+    <labels>
+        <fullName>Tags</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Tags</shortDescription>
+        <value>Tags :</value>
+    </labels>
+    <labels>
+        <fullName>Test_Day</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Test Day</shortDescription>
+        <value>Test Day</value>
+    </labels>
+    <labels>
+        <fullName>Test_Day_Preparation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Test Day Preparation</shortDescription>
+        <value>Test Preparation</value>
+    </labels>
+    <labels>
+        <fullName>Testing_Program</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Testing Program :</shortDescription>
+        <value>Testing Program name</value>
+    </labels>
+    <labels>
+        <fullName>The_article_has_not_been_published_in_this_language</fullName>
+        <categories>SelfHelpSite</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The article has not been published in this language</shortDescription>
+        <value>We&apos;re sorry but this article has not yet been published in this language.</value>
+    </labels>
+    <labels>
+        <fullName>This_website_uses</fullName>
+        <categories>Self Help footer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>This website uses</shortDescription>
+        <value>This website uses</value>
+    </labels>
+    <labels>
+        <fullName>This_will_help_us_get_you_the_most_accurate_results</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>This will help us get you the most accurate results.</shortDescription>
+        <value>This will help us get you the most accurate results.</value>
+    </labels>
+    <labels>
+        <fullName>Try_typing_the_acronym_or_long_name_of_your_testing_program</fullName>
+        <categories>selfhelp modalpopup</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Try typing the acronym or long name of your testing program.</shortDescription>
+        <value>Try typing the acronym or long name of your testing program.</value>
+    </labels>
+    <labels>
+        <fullName>Try_using_fewer_different_or_more_general_keywords</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Try using fewer, different, or more general keywords</shortDescription>
+        <value>Try using fewer, different, or more general keywords</value>
+    </labels>
+    <labels>
+        <fullName>View_all</fullName>
+        <categories>View all</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>View all</shortDescription>
+        <value>View all</value>
+    </labels>
+    <labels>
+        <fullName>View_contact_information</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>View contact information</shortDescription>
+        <value>View contact information</value>
+    </labels>
+    <labels>
+        <fullName>We_may_not_support_candidate_help_from_this_site</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>We may not support candidate help from this site</shortDescription>
+        <value>We may not support candidate help for your program from Pearson VUE Help and Support.</value>
+    </labels>
+    <labels>
+        <fullName>We_re_sorry_but_we_couldn_t_find</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>We&apos;re sorry, but we couldn&apos;t find</shortDescription>
+        <value>We&apos;re sorry, but we couldn&apos;t find</value>
+    </labels>
+    <labels>
+        <fullName>We_recommend_selecting_your_testing_program_first</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>We recommend selecting your testing program first</shortDescription>
+        <value>We recommend selecting your testing program first, and then reviewing help and support search topics.</value>
+    </labels>
+    <labels>
+        <fullName>Welcome</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Welcome</shortDescription>
+        <value>Welcome!</value>
+    </labels>
+    <labels>
+        <fullName>What_we_do</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>What we do</shortDescription>
+        <value>What we do</value>
+    </labels>
+    <labels>
+        <fullName>Yes</fullName>
+        <categories>Tasking process dialog box</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Yes</shortDescription>
+        <value>Yes</value>
+    </labels>
+    <labels>
+        <fullName>Your_preferred_Language</fullName>
+        <categories>Self Help</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Your preferred Language</shortDescription>
+        <value>Your preferred Language</value>
+    </labels>
+    <labels>
+        <fullName>all</fullName>
+        <categories>knowledge Widget labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>all</shortDescription>
+        <value>All</value>
+    </labels>
+    <labels>
+        <fullName>alternative_language</fullName>
+        <categories>SelfHelpSite</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>alternative language</shortDescription>
+        <value>alternative language</value>
+    </labels>
+    <labels>
+        <fullName>and</fullName>
+        <categories>SelfHelpSite</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>and</shortDescription>
+        <value>and</value>
+    </labels>
+    <labels>
+        <fullName>clear_all</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>clear all</shortDescription>
+        <value>Clear all</value>
+    </labels>
+    <labels>
+        <fullName>clear_search</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>clear search</shortDescription>
+        <value>clear search</value>
+    </labels>
+    <labels>
+        <fullName>cookies</fullName>
+        <categories>Self Help footer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>cookies</shortDescription>
+        <value>cookies</value>
+    </labels>
+    <labels>
+        <fullName>email_clientname_com</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>emailclientnamecom</shortDescription>
+        <value>email@clientname.com</value>
+    </labels>
+    <labels>
+        <fullName>filter_by</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>filter by</shortDescription>
+        <value>FILTER BY:</value>
+    </labels>
+    <labels>
+        <fullName>footer_background_image</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>footer background image</shortDescription>
+        <value>footer background image</value>
+    </labels>
+    <labels>
+        <fullName>from_the_following_options</fullName>
+        <categories>SelfHelpSite</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>from the following options:</shortDescription>
+        <value>from the following options:</value>
+    </labels>
+    <labels>
+        <fullName>get_assistance</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>get assistance</shortDescription>
+        <value>get assistance.</value>
+    </labels>
+    <labels>
+        <fullName>helpSupport</fullName>
+        <categories>Self Help</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>helpSupport</shortDescription>
+        <value>HELP SUPPORT</value>
+    </labels>
+    <labels>
+        <fullName>label_None</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>label None</shortDescription>
+        <value>None</value>
+    </labels>
+    <labels>
+        <fullName>modalPopup_banner_message</fullName>
+        <categories>SelfHelpSite</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>modalPopup banner message</shortDescription>
+        <value>We’re continuing to add testing programs, so if yours is not listed yet, check back for updates.</value>
+    </labels>
+    <labels>
+        <fullName>of</fullName>
+        <categories>Community Custom Case List View</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>of</shortDescription>
+        <value>of</value>
+    </labels>
+    <labels>
+        <fullName>opens_in_new_window</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>opens in new window</shortDescription>
+        <value>opens in new window</value>
+    </labels>
+    <labels>
+        <fullName>pearsonvue_com</fullName>
+        <categories>Self help to pearsonvue.com redirect link</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>pearsonvue.com</shortDescription>
+        <value>https://home.pearsonvue.com</value>
+    </labels>
+    <labels>
+        <fullName>phonenumber</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>phonenumber</shortDescription>
+        <value>0800-1810696</value>
+    </labels>
+    <labels>
+        <fullName>results_for</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>results for</shortDescription>
+        <value>results for</value>
+    </labels>
+    <labels>
+        <fullName>results_found_for</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>results found for</shortDescription>
+        <value>results found for</value>
+    </labels>
+    <labels>
+        <fullName>search_bar_placeholder</fullName>
+        <categories>search bar placeholder</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>search bar placeholder</shortDescription>
+        <value>Search keywords, questions, and more</value>
+    </labels>
+    <labels>
+        <fullName>search_program_icon</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>search program icon</shortDescription>
+        <value>search program</value>
+    </labels>
+    <labels>
+        <fullName>skip_to_main_content</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>skip to main content</shortDescription>
+        <value>Skip to main content</value>
+    </labels>
+    <labels>
+        <fullName>view_more</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>view more</shortDescription>
+        <value>View more</value>
+    </labels>
+</CustomLabels>

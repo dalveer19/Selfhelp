@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <decisions>
+        <description>This Decision is to check if the article is getting linked to the publish or achieved article</description>
+        <name>is_Publish_or_Archieved</name>
+        <label>is Publish or Archieved</label>
+        <locationX>660</locationX>
+        <locationY>333</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Publish_or_Archieved</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Knowledge_Article__r.PublishStatus</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Online</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Knowledge_Article__r.PublishStatus</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Archived</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Error_Message</targetReference>
+            </connector>
+            <label>Publish or Archieved</label>
+        </rules>
+    </decisions>
+    <description>1) This Flow checks  and prevents the linking of a client to the published or archieved versions of articles</description>
+    <environments>Default</environments>
+    <interviewLabel>Prevent Client link on Published or Archieved Articles {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Prevent Client link on Published or Archieved Articles</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>544</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>is_Publish_or_Archieved</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Knowledge_Article__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Linked_Client__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

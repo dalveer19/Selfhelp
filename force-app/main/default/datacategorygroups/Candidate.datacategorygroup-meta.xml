@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <label>Account &amp; Login</label>
+            <name>Account_Login</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Scheduling</label>
+            <name>Scheduling</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Payment</label>
+            <name>Payment</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Test Preparation</label>
+            <name>Test_Day_Preparation</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Test Day</label>
+            <name>Test_Day</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Exam Results</label>
+            <name>Exam_Results</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Accommodations</label>
+            <name>Accommodations</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>Candidate</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

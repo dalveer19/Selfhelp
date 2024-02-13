@@ -1,0 +1,72 @@
+{
+  "forgotPasswordRouteId" : "425fa537-4dcf-48c5-8089-716777da11d0",
+  "isAvailableToGuests" : true,
+  "isFilteredComponentsView" : true,
+  "isProgressiveRenderingEnabled" : false,
+  "loginAppPageId" : "831e006a-7df0-4d95-a825-c8c65c281c83",
+  "mainAppPageId" : "998c2199-5d1b-4626-a2a2-2cbf96344ad3",
+  "preferredDomain" : "none",
+  "selfRegistrationRouteId" : "9e0f5d3b-e31d-4376-bccb-54fe802ca3b5",
+  "trustedSitesForScript" : [ {
+    "id" : "b99db7c5-123c-4bca-8b9c-dfbcead15661",
+    "isActive" : true,
+    "trustedSiteName" : "picsum_photos",
+    "trustedSiteUrl" : "https://*.picsum.photos",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "604b4676-bb08-49c8-8b79-a613ae898c2e",
+    "isActive" : true,
+    "trustedSiteName" : "www.googletagmanager.com",
+    "trustedSiteUrl" : "https://www.googletagmanager.com/gtag/js",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "bca746f2-912b-4b50-ae7c-d7526937fa0f",
+    "isActive" : true,
+    "trustedSiteName" : "css",
+    "trustedSiteUrl" : "https://kit.fontawesome.com/",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "2d2f30f3-2ec0-4727-9042-b3b468fdd89b",
+    "isActive" : true,
+    "trustedSiteName" : "www.google-analytics.com",
+    "trustedSiteUrl" : "https://www.google-analytics.com",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "e3920375-7e52-410e-a5bd-dced85ea1090",
+    "isActive" : true,
+    "trustedSiteName" : "stats.g.doubleclick.net",
+    "trustedSiteUrl" : "https://stats.g.doubleclick.net",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "35428e1c-d722-4b76-9f0b-7c84e870a62d",
+    "isActive" : true,
+    "trustedSiteName" : "www.googletagmanager.com1",
+    "trustedSiteUrl" : "https://www.googletagmanager.com/gtm.js",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "297ae8a4-1210-4485-9f66-faa647cb1f01",
+    "isActive" : true,
+    "trustedSiteName" : "cdn.cookielaw.org",
+    "trustedSiteUrl" : "https://cdn.cookielaw.org",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "25a959c9-11fc-4a51-b1a7-8522d3bcdcf0",
+    "isActive" : true,
+    "trustedSiteName" : "frame-src",
+    "trustedSiteUrl" : "https://pearsonvue--casemgtdev--c.sandbox.vf.force.com",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "875ac904-49b0-4ce7-ad3c-75ad061826d9",
+    "isActive" : true,
+    "trustedSiteName" : "cookievf2",
+    "trustedSiteUrl" : "https://pearsonvue--casemgtdev.sandbox.lightning.force.com",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "251d15d2-07fc-49b2-9709-79a6641948ed",
+    "isActive" : true,
+    "trustedSiteName" : "Google Analytics 3",
+    "trustedSiteUrl" : "https://www.googletagmanager.com",
+    "type" : "trustedSitesForScripts"
+  } ],
+  "type" : "site"
+}

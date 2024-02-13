@@ -1,0 +1,66 @@
+<template>
+	<div class="bgcolor searchHeaderComponent">
+
+		<img src={searchResultsImage} class="arcClass" alt="" />
+
+		<!-- Navigation -->
+		<div>
+			<c-page-navigation-parent></c-page-navigation-parent>
+		</div>		
+
+		<!-- Category Selected Header -->
+		<template if:true={categoryLabel}>
+			<div >
+				<h2 class="catName">{categoryLabel}</h2>
+			</div>
+		</template>
+
+		<!-- client specific template -->
+		<div class="searchHeaderComponentWrapper ">
+		<template if:true={isClientThere}>
+			<div class="slds-grid slds-wrap">
+					<div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1 ">
+						<p class="testProInfo"> {clientName} &nbsp;
+						<a href="javascript:void(0);" onclick={openModal} class="changeLink">{label_hyperlink}<span class="slds-assistive-text">{clientName}</span></a></p>
+					</div>
+			</div>
+		</template>
+
+		<!-- GUEST USERS -->
+		<template if:false={isClientThere}>
+			<div class="searchBox">
+				<div class="slds-grid slds-gutters_medium slds-grid_align-center slds-wrap mobTextCenter LargeDeviceMargin"
+					width="100%">
+					<div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-2 largeDeviceAlign">
+						<lightning-input type="radio" name="programSelection" data-id="AllPrograms"
+							label={label_I_want_to_search_across_all_programs} value="searchAllPrograms"
+							class="searchRadio radioLabel" checked={isSelectedProgramSearchAllPrograms}>
+						</lightning-input>
+					</div>
+					<div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-2 mob_alignpm ">
+						<lightning-input type="radio" name="programSelection" data-id="iknow" label={label_I_know_my_testing_program}
+							class="searchRadio radioLabel" value="iknow" onclick={handleProgramSelection} onkeydown={openModalRadio}>
+						</lightning-input>
+					</div>
+				</div>
+			</div>
+		</template>
+
+		<!-- SEARCH BAR -->
+		<div class="slds-align_absolute-center SearchBarSection">
+			<c-search-Bar-With-Suggestions-Child-V1 client-code-from-parent={clientCode}
+				onkeywordchange={handleKeywordChange} class="searchBar">
+			</c-Search-Bar-With-Suggestions-Child-V1>
+		</div>
+		</div>
+
+		<!-- MODAL POPUP -->
+		<template if:true={showModal}>
+			<c-modal-popup onclosemodal={closeModal} client-name-from-container={clientName} search-word={keyword} cat-name={categoryName}
+				client-present={isClientThere} ondeselectclient={handleClientDeselected}
+				onsendclient={handleClientSelected}  onremoveclient={handleRemoveClient}
+				current-page-reference-state={currentPageReferenceState}>
+			</c-modal-popup>
+		</template>
+	</div>
+</template>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Featured_Articles</fullName>
+    <active>true</active>
+    <description>to put validation for featured articles based on visibility to candidate</description>
+    <errorConditionFormula>IF(  IsMasterLanguage == true, (if( feature_article__c == true ,  Article_visiblity_for_candidate__c == false  ,false )), false )</errorConditionFormula>
+    <errorMessage>Mark Article visibility for candidate to true to make this featured article</errorMessage>
+</ValidationRule>

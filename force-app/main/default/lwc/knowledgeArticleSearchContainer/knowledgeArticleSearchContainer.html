@@ -1,0 +1,83 @@
+<template>
+	<div class="searchHeaderComponent bgcolor"  data-id="main_content">
+			
+		<!-- client specific template -->
+		<template if:true={isClientThere}>
+			<img src={clientBackground}  class="clientClass" alt=""/>
+			
+			<!-- Navigation -->
+			<div>
+				<c-page-navigation-parent parent-client-code={clientCode} class="pagenavContainer"></c-page-navigation-parent>
+			</div>
+
+			<div class="slds-grid slds-wrap clientSelectionClass">
+					<div class="slds-col slds-size_1-of-1 logo_container">
+						<img src={clientLogo} alt="Client Logo" loading="eager" class="logopadding"/>
+					</div>
+					<div class="slds-col slds-size_1-of-1">
+						<p class="header4">
+								{label_Testing_Program} {clientName}&nbsp;
+								<a href="javascript:void(0);" onclick={openModal}  class="changePro">{label_hyperlink}<span class="slds-assistive-text">{clientName}</span></a>
+						</p>
+					</div>
+			</div> 
+			<!-- SEARCH BAR -->
+			<div class="slds-grid slds-wrap clientSelectionClassWrapper">
+			<div class="slds-col slds-size_1-of-1 clientSelectionClassSearch">
+				<c-search-bar-with-suggestions-child-v1 client-code-from-parent={clientCode} class="searchBar">
+				</c-search-bar-with-suggestions-child-v1>
+			</div>
+			</div>
+		</template>
+
+		<!-- No client selected -->
+		<template if:false={isClientThere}>
+			<div class="searchBox" role="group" aria-labelledby="knowledge_search_radio_group">
+				<h2 class="welcomeText">{label_Hi_How_can_we_help}</h2>
+				<h4 id="knowledge_search_radio_group" class="welcomeInfo" aria-level="2">{label_Search_topics_and_get_answers}</h4>
+				<div class="slds-grid slds-gutters_medium slds-grid_align-center slds-wrap pt40 mobTextCenter LargeDeviceMargin"
+					width="100%">
+					<div
+						class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-2 largeDeviceAlign">
+						<lightning-input type="radio" name="programSelection"
+							label={label_I_want_to_search_across_all_programs} value="searchAllPrograms"
+							class="searchRadio radioLabel" checked={isSelectedProgramSearchAllPrograms}>
+						</lightning-input>						
+					</div>
+					<div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-2 mob_alignpm ">
+						<lightning-input type="radio" name="programSelection" label={label_I_know_my_testing_program}
+							class="searchRadio radioLabel" value="iknow" onclick={handleProgramSelection}
+							onkeydown={openModalRadio}>
+						</lightning-input>
+						<!--<div class="slds-popover slds-popover_tooltip slds-nubbin_bottom-left .slds-rise-from-ground" role="tooltip" id="iKnowMyTestingPgmRadioTooltip" style="position:absolute;top:-4px;left:35px">
+							<div class="slds-popover__body"> deserunt aute id consequat veniam incididunt duis in sint irure nisi.</div>
+						</div>-->
+					</div>
+				</div>
+			</div>
+			<!-- SEARCH BAR -->
+			<div class="slds-align_absolute-center slds-var-p-top_medium ">
+				<c-search-bar-with-suggestions-child-v1 client-code-from-parent={clientCode} class="searchBar">
+				</c-search-bar-with-suggestions-child-v1>
+			</div>
+		</template>
+
+		<!-- MODAL POPUP -->
+		<template if:true={showModal}>
+			<c-modal-popup onclosemodal={closeModal} client-name-from-container={clientName}
+				client-present={isClientThere} ondeselectclient={handleClientDeselected}
+				onsendclient={handleClientSelected} onresetprogram={resetProgram} onremoveclient={handleRemoveClient}
+				current-page-reference-state={currentPageReferenceState} clientnamefromhelp={clientnamefromhelp}>
+			</c-modal-popup>
+		</template>
+
+		<div class="rightBg">
+			<img src={right_bg} alt="">
+			</div>
+		</div>
+		<div class="curveImage"> 
+							<svg class="curveImg" xmlns="http://www.w3.org/2000/svg" width="1920" height="32" viewBox="0 0 1920 32" fill="none">
+					<path d="M0 32.0002C956.136 -19.6564 1679.94 10.4765 1920 32L1920 0L0.000607554 4.19667e-05L0 32.0002Z" fill="#E7F6F7"/>
+				</svg>
+		</div>
+</template>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>ACCA</fullName>
+        <default>false</default>
+        <label>ACCA</label>
+    </customValue>
+    <customValue>
+        <fullName>DVSA</fullName>
+        <default>false</default>
+        <label>DVSA</label>
+    </customValue>
+    <customValue>
+        <fullName>PCM</fullName>
+        <default>false</default>
+        <label>PCM</label>
+    </customValue>
+    <customValue>
+        <fullName>Manage Additional Access</fullName>
+        <default>false</default>
+        <label>Manage Additional Access</label>
+    </customValue>
+    <customValue>
+        <fullName>Web Services</fullName>
+        <default>false</default>
+        <label>Web Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Web Services Implementation</fullName>
+        <default>false</default>
+        <label>Web Services Implementation</label>
+    </customValue>
+    <customValue>
+        <fullName>Pearson outage</fullName>
+        <default>false</default>
+        <label>Pearson outage</label>
+    </customValue>
+    <customValue>
+        <fullName>E2c</fullName>
+        <default>false</default>
+        <label>E2c</label>
+    </customValue>
+    <customValue>
+        <fullName>VSS L2</fullName>
+        <default>false</default>
+        <label>VSS L2</label>
+    </customValue>
+    <customValue>
+        <fullName>NOC</fullName>
+        <default>false</default>
+        <label>NOC</label>
+    </customValue>
+    <customValue>
+        <fullName>PC</fullName>
+        <default>false</default>
+        <label>PC</label>
+    </customValue>
+    <customValue>
+        <fullName>AC_Agent</fullName>
+        <default>false</default>
+        <label>AC_Agent</label>
+    </customValue>
+    <customValue>
+        <fullName>Knowledge Content Writer PS</fullName>
+        <default>false</default>
+        <label>Knowledge Content Writer PS</label>
+    </customValue>
+    <customValue>
+        <fullName>Knowledge Content Manager PS</fullName>
+        <default>false</default>
+        <label>Knowledge Content Manager PS</label>
+    </customValue>
+    <customValue>
+        <fullName>Proctor case</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Proctor case</label>
+    </customValue>
+    <customValue>
+        <fullName>Survey Access</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Survey Access</label>
+    </customValue>
+    <customValue>
+        <fullName>AC_Manager</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>AC_Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>AC Administrator</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>AC Administrator</label>
+    </customValue>
+    <customValue>
+        <fullName>Knowledge_Content_Writer_PS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Knowledge_Content_Writer_PS</label>
+    </customValue>
+    <customValue>
+        <fullName>Knowledge_Content_Manager_PS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Knowledge_Content_Manager_PS</label>
+    </customValue>
+    <masterLabel>Additional permission set</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

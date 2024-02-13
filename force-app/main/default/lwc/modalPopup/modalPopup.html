@@ -1,0 +1,156 @@
+<template>
+	<!-- Modal section for displaying the search container -->
+	<section role="dialog" tabindex="0" aria-modal="true" aria-label={label_Search_and_select_your_testing_program}
+		class="slds-modal slds-fade-in-open slds-modal_small modalBox" onkeyup={keyboardHandler} onfocusout={handleFocusOut} data-index="0">
+		<div class="slds-modal__container modalContainerBox" onclick={ignore} data-id="modalPopuptab">
+			<i class="bgImage"></i>
+			<!-- Header section of the modal -->
+			<div class="slds-modal__header modalHeaderBox">
+				<div class="bannerMessage slds-grid">
+				<div class="slds-size_1-of-12 flagwidth">
+					<div class="flagBox"><i class="fa-sharp fa-solid fa-flag flagIcon"></i></div>
+					</div>
+				<div class="bannerMessagetext slds-size_11-of-12">
+					<span class="msgBold">{label_Help_and_support_is_in_progress} </span>{label_modalPopup_banner_message}
+				</div>
+				</div>
+				<i class="bgImage"></i>
+				<!--img src={modalBackground}  class="modalClass"/-->
+				<!-- Header content layout -->
+				<lightning-layout style="z-index:2">
+					<!-- Header content item with size 2 for close button -->
+					<lightning-layout-item size="2" class="slds-order_2">
+						<div class="slds-clearfix">
+							<div class="slds-float_right">
+								<!-- Close button -->
+								<button class="slds-button slds-button_icon closeButton" title={label_close} aria-label={label_close} onclick={handleCloseClick}>
+									<!--lightning-icon icon-name="utility:close" alternative-text={label_close} size="small"></lightning-icon-->
+									<i class="fa-solid fa-close closebtn"></i>
+									
+								</button>
+							</div>
+						</div>
+					</lightning-layout-item>
+					<!-- Header content item with size 10 -->
+					<lightning-layout-item size="10" class="slds-order_1">
+						<!-- Content within the header -->
+						<div class="header-content">
+							<div class="header-text">
+								<!-- Display selected program if present -->
+								<template if:true={clientPresent}>
+									<!-- Search and select label -->
+									<h4 id="modal_title" class="modalHeader4" aria-level="2">{label_Search_and_select_your_testing_program}</h4>
+									<p id="modal-description" class="selectProgram">{label_SELECTED_PROGRAM}</p>
+									<p class="modalDescBold">{label_Testing_Program}
+										{clientNameFromContainer}&nbsp;&nbsp;
+										<a class="removeLink" href="javascript:void(0);" onclick={handleRemoveClick}
+											style="position:relative;">{label_Remove}<span class="slds-assistive-text">{label_SELECTED_PROGRAM} {clientNameFromContainer}</span></a>
+									</p>
+								</template>
+								<!-- Display instructions if no program selected -->
+								<template if:false={clientPresent}>
+									<!-- Great and Search and select label -->
+									<h4 class="modalHeader4" aria-level="2">{label_Great}
+										{label_Search_and_select_your_testing_program}</h4>
+									<p class="modalDesc">{label_This_will_help_us_get_you_the_most_accurate_results}</p>
+								</template>
+							</div>
+						</div>
+					</lightning-layout-item>
+				</lightning-layout>
+				<!-- Search layout section -->
+				<lightning-layout class="topPaddingSearch">
+					<lightning-layout-item size="12">
+						<!-- Search input field -->
+						<div class="slds-form-element">
+							<div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_left">
+								<i class="fa-solid fa-magnifying-glass faSearchIcon"></i>
+								<input type="text" aria-label={label_Begin_typing_program_name_or_acronym} placeholder={label_Begin_typing_program_name_or_acronym} oninput={handleSearch} value={searchQuery} class="slds-input searchInput" />
+
+								<span class="iconCloseSearchBar" if:true={showCross} onclick={handleInputClear} onkeypress={handleInputClearOnKeyPress} tabindex="0" role="button" aria-label={clearsearchlabel}>
+								<i class="fa-solid fa-circle-xmark closeSearchIcon" ></i>
+								
+								</span>
+
+
+							</div>
+						</div>
+					</lightning-layout-item>
+				</lightning-layout>
+			</div>
+			<!-- Content section of the modal -->
+			<div class="slds-modal__content modalContentBox">
+				<!-- Display spinner while loading clients -->
+
+				<template if:true={clientsLoading}>
+					<div class="slds-box spinnerBox slds-var-m-around_small" style="height:90%;">
+						<div class="slds-is-relative slds-align_absolute-center slds-var-p-around_xx-large">
+							<div class="lds-ring">
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+						</div>
+					</div>
+				</template>
+				<!-- Display clients or error messages -->
+				<template if:false={clientsLoading}>
+					<div class="clientsContainerBox">
+						<!-- If no error, display clients -->
+						<template if:false={hasError}>
+							<lightning-layout multiple-rows>
+								<template for:each={filteredClients} for:item="client" key={client.Client_code__c}>
+									<lightning-layout-item key={client.Client_code__c} size="12" small-device-size="12"
+										medium-device-size="6" large-device-size="4">
+										<!-- Client item with link and information -->
+										<a tabindex="0"
+											class="slds-box slds-var-m-around_xx-small slds-box_x-small clientInfoContainer clientName"
+											title={client.Name} onclick={handleClientClick} data-value={client.Logo__c}
+											data-client-code={client.Client_code__c} data-client-name={client.Name}
+											onkeydown={handleKeyPress}>
+											<div style="display: flex; align-items: center;">
+												<span>{client.Name}</span>
+											</div>
+											<div class="arrowIcon"><i class="fa-solid fa-chevron-right arrowIcon"></i>
+											</div>
+										</a>
+									</lightning-layout-item>
+								</template>
+							</lightning-layout>
+						</template>
+						<!-- If error, display error messages -->
+						<template if:true={hasError}>
+							<lightning-layout multiple-rows class="errordiv" role="alert">
+
+								<lightning-layout-item size="12">
+									<!-- Error notification icon and message -->
+									<h5 class="noResultFound mob_cen_result">
+										<i class="fa-solid fa-bell-exclamation bellIcon"></i>
+										{label_Oops_No_results_found}</h5>
+								</lightning-layout-item>
+								<lightning-layout-item size="12" small-device-size="12" medium-device-size="12"
+									large-device-size="12">
+									<p class="searchTips">{label_Please_consider_the_following_search_tips}<span class="hidden" aria-hidden="false">{label_Try_typing_the_acronym_or_long_name_of_your_testing_program}{label_Review_your_spelling_and_spacing}</span></p>
+									<ul class="slds-list_dotted ml_5">
+										<!-- Error tips for searching -->
+										<div class="slds-var-p-left_large">
+											<li class="searchTips fontW400">
+												{label_Try_typing_the_acronym_or_long_name_of_your_testing_program}
+											</li>
+											<li class="searchTips fontW400">{label_Review_your_spelling_and_spacing}
+											</li>
+										</div>
+									</ul>
+								</lightning-layout-item>
+							</lightning-layout>
+						</template>
+					</div>
+				</template>
+			</div>
+
+		</div>
+	</section>
+	<!-- Backdrop section for the modal -->
+	<div class="slds-backdrop slds-backdrop_open" onkeyup={keyboardHandler}   data-index="1" tabindex="0" onfocusout={handleFocusOut}></div>
+</template>

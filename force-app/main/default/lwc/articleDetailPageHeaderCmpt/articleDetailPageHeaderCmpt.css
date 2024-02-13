@@ -1,0 +1,112 @@
+.searchContainer{
+    max-width: 75rem;
+    margin: 0 auto;
+    position: absolute;
+    right: 4%;
+}
+.articleDetailPage .searchIcon{
+    color: var(--neutral-50-white, #FFF);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Font Awesome 6 Pro"!important;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+        padding-top: 1px;
+    padding-right: 1px;
+}
+.articleDetailPage .searchIconWrapper{
+    width: 2.8125rem;
+height: 2.8125rem;
+padding: 0.6875rem 0.625rem 0.625rem 0.6875rem;
+border-radius: 6.25rem;
+background: var(--primary-600, #007394);
+
+}
+
+.articleDetailPage .searchIconWrapper:active{
+   
+    background: var(--primary-700, #00607D);
+}
+.articleDetailPage .searchIconWrapper:active .searchIcon{
+    color: var(--primary-200, #87C5E1);
+}
+.articleDetailPage .searchIconWrapper:focus, .articleDetailPage .searchIconWrapper:focus-visible{
+  
+    background: var(--primary-700, #00607D);
+    box-shadow: 0px 0px 2px 3px #219EA3;
+    outline: none!important;
+}
+
+.articleDetailPage .searchIconWrapper:hover{
+    background: var(--primary-200, #87C5E1);
+   }
+.articleDetailPage .searchIconWrapper:hover .searchIcon{
+    color: var(--primary-700, #00607D);
+}
+
+.searchProgramIconTooltip{
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 46px;
+    background-color: #fff;
+    padding: 4px;
+    width: 150px;
+    text-align: center;
+}
+.searchIconWrapper:focus .searchProgramIconTooltip{
+    display: block;
+}
+.slds-button{
+    fill: white !important;
+}
+
+.circular-button {
+     width: 2.8125rem;
+height: 2.8125rem;
+padding: 0.6875rem 0.625rem 0.625rem 0.6875rem;
+border-radius: 6.25rem;
+background: var(--primary-600, #007394);
+}
+
+.white-icon {
+    --sds-c-icon-color-foreground: white !important;
+
+}
+.ArticleDetailClass {
+    position: absolute;
+    right: 0%;
+    width: 40.3125rem;
+    height: 40.3125rem;
+    z-index: 1;
+}
+
+@media  screen and (min-width: 768px) {
+    .articleDetailPag .ArticleDetailClass {
+        position: absolute;
+        right: 0%;
+            width: 40.3125rem;
+        height: 40.3125rem;
+    }
+    .articleHeaderWrapper{
+        padding:2rem
+    }
+      .searchContainer{
+        max-width: 75rem;
+        margin: 0 auto;
+    }
+}
+
+
+
+@media  screen and (min-width: 1024px) {
+
+    .articleHeaderWrapper{
+        padding:2rem
+    }
+    .searchContainer{
+        max-width: 75rem;
+    }
+}

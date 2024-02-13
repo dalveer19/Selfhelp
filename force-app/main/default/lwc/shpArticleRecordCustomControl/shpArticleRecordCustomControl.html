@@ -1,0 +1,159 @@
+<template>
+	<template if:true={isLoading}>
+		<div class="slds-var-m-around_medium">
+			<div class="slds-is-relative slds-var-p-around_large">
+				<lightning-spinner alternative-text="Loading..." variant="brand"></lightning-spinner>
+			</div>
+		</div>
+	</template>
+	<template if:false={isLoading}>
+		<div data-id="shpAVC" class="test-id__section slds-section slds-m-vertical_none has-header slds-is-open">
+			<h3 class="test-id__section-header-container slds-section__title">
+				<button name="shpAVC" onclick={toggleSection} class="test-id__section-header-button slds-section__title-action slds-button">
+					<span class="test-id__section-header-icon slds-icon_container slds-m-right_x-small">
+						<lightning-icon size='x-small' icon-name={sectionIcon} class="slds-icon-utility-chevrondown slds-icon_container">
+						</lightning-icon>
+					</span>
+					<span class="test-id__section-header-title">
+						Article Visibility Controls
+					</span>
+				</button>
+			</h3>
+			<!-- Approval Status -->
+			<div if:true={recordData.isMasterLanguage}>
+				<div class="test-id__section-content slds-section__content section__content slds-p-horizontal_small">
+					<div class="slds-form" role="list">
+						<div class="slds-form__row">
+							<div class="slds-form__item" role="listitem">
+								<div class="slds-form-element slds-form-element_edit slds-form-element_readonly slds-form-element_horizontal slds-hint-parent">
+									<span class="slds-form-element__label">
+										Approval Status
+									</span>
+									<div class="slds-form-element__control">
+										<div class="slds-form-element__static">
+											{recordData.approvalStatus}
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Applicable to all clients -->
+			<div class="test-id__section-content slds-section__content section__content slds-p-horizontal_small">
+				<div class="slds-form" role="list">
+					<div class="slds-form__row">
+						<div class="slds-form__item" role="listitem">
+							<div class="slds-form-element slds-form-element_edit slds-form-element_readonly slds-form-element_horizontal slds-hint-parent">
+								<span class="slds-form-element__label">
+									Applicable to all clients
+								</span>
+								<div class="slds-form-element__control">
+									<div class="slds-form-element__static">
+										<lightning-input 	
+											type="checkbox" variant="label-hidden" 
+											name="applicableToAllClients"
+											disabled={isReadOnly} 
+											checked={recordData.applicableToAllClients} 
+											onchange={handleCheckboxChange}>
+										</lightning-input>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Article visibility for candidate -->
+			<div class="test-id__section-content slds-section__content section__content slds-p-horizontal_small">
+				<div class="slds-form" role="list">
+					<div class="slds-form__row">
+						<div class="slds-form__item" role="listitem">
+							<div class="slds-form-element slds-form-element_edit slds-form-element_readonly slds-form-element_horizontal slds-hint-parent">
+								<span class="slds-form-element__label">
+									Article visibility for candidate
+								</span>
+								<div class="slds-form-element__control">
+									<div class="slds-form-element__static">
+										<lightning-input 
+											type="checkbox" variant="label-hidden" 
+											name="articleVisibilityForCandidate" 
+											disabled={isReadOnly}
+											checked={recordData.articleVisibilityForCandidate} 
+											onchange={handleCheckboxChange}>
+										</lightning-input>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Feature article -->
+			<div class="test-id__section-content slds-section__content section__content slds-p-horizontal_small">
+				<div class="slds-form" role="list">
+					<div class="slds-form__row">
+						<div class="slds-form__item" role="listitem">
+							<div class="slds-form-element slds-form-element_edit slds-form-element_readonly slds-form-element_horizontal slds-hint-parent">
+								<span class="slds-form-element__label">
+									Feature article
+								</span>
+								<div class="slds-form-element__control">
+									<div class="slds-form-element__static">
+										<lightning-input 
+											type="checkbox" variant="label-hidden" 
+											name="featureArticle"
+											disabled={isReadOnly} 
+											checked={recordData.featureArticle}
+											onchange={handleCheckboxChange}>
+										</lightning-input>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Feature article -->
+			<div if:true={isTranslationStatusVisible} class="test-id__section-content slds-section__content section__content slds-p-horizontal_small">
+				<div class="slds-form" role="list">
+					<div class="slds-form__row">
+						<div class="slds-form__item" role="listitem">
+							<div class="slds-form-element slds-form-element_edit slds-form-element_readonly slds-form-element_horizontal slds-hint-parent">
+								<span class="slds-form-element__label">
+									Translations Completed
+								</span>
+								<div class="slds-form-element__control">
+									<div class="slds-form-element__static">
+										<lightning-input 
+											type="checkbox" variant="label-hidden" 
+											name="translationComplete"
+											disabled={isReadOnly} 
+											checked={recordData.translationComplete}
+											onchange={handleCheckboxChange}>
+										</lightning-input>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br/>
+			<div class="slds-align_absolute-center">
+				<template if:false={isEditMode}>
+					<lightning-button if:false={isEditHidden} onclick={handleEdit} label="Edit" variant="brand">
+					</lightning-button>
+				</template>
+				<template if:true={isEditMode}>
+					<lightning-button if:true={isEditMode} onclick={handleCancel} label="Cancel">
+					</lightning-button>
+					&nbsp;
+					<lightning-button if:true={isEditMode} onclick={handleSave} label="Save" variant="brand">
+					</lightning-button>
+				</template>
+			</div>
+		</div>
+	</template>
+</template>

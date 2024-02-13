@@ -1,0 +1,102 @@
+{
+  "appPageId" : "998c2199-5d1b-4626-a2a2-2cbf96344ad3",
+  "componentName" : "c:LandingPageTemplate",
+  "dataProviders" : [ ],
+  "id" : "12fd398d-95e4-4a4f-870b-ed3880fe9669",
+  "label" : "Article Search Results",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:header_SH",
+      "id" : "aa61fcd1-2c28-4c08-affd-60cf6af79df3",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f42c16ee-573b-4e3a-ac15-ed8950c67860",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:shp_ArticlesSearchResultComponent",
+      "id" : "0b2bae06-df68-47a4-9564-b95d2d41f58c",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f7138b78-3a22-4419-8433-ef8cb4384db4",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:footer_SH",
+      "id" : "205afdc7-ab63-4719-95b0-d7f77cfad758",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e8743539-c174-4063-8c6e-1bdf8194bb5e",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Article and Category Search Results"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "f4697b44-581a-4865-a7ec-e887ac09ffe9",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "fad029a8-12f5-43d9-8afd-ce944591eb81",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:gTagManager",
+      "id" : "ff34434f-1c2e-406b-b5c9-678dccabe53d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "c:searchResultsSearchContainer",
+      "id" : "f8674864-8152-4251-8c5f-1dc9d94755ca",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "c:shp_ArticlesSearchResultComponent",
+      "id" : "92360efa-183a-48ea-a608-38679ad33beb",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "c:needMoreHelpCmpt",
+      "id" : "ba7cf444-15a2-4a09-a3aa-16b2b0445a36",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "c:shp_ContactUs",
+      "id" : "4412b8c0-dc37-4e2e-979c-cc516941c84f",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f7613c75-3e9f-4c39-a2fc-142187c7ba8a",
+    "regionName" : "main",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-article-search-results"
+}

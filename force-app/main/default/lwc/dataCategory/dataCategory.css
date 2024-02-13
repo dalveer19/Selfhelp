@@ -1,0 +1,224 @@
+.color {
+    color: #7f7f7f;
+}
+
+.slds-gutters_x-small .slds-col {
+     padding-right: var(--lwc-spacingXSmall,0rem) !important; 
+     padding-left: var(--lwc-spacingXSmall,0rem) !important; 
+}
+
+.featureDisplayComponent{
+	padding:1.5rem 0;
+	width: 100%;
+}
+.featureDisplayComponent .featureHeading{
+	color: var(--Neutral-800, #333);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	/* Header/H4 */
+	font-family: "Open Sans";
+	font-size: 1.25rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	display: inline-block;
+		padding:0rem 0.5rem;
+
+}
+
+.featureDisplayComponent .headingContainer{
+	text-align: center;
+	padding-bottom:1.5rem;
+	
+}
+.logoWrap{
+	width: 3.75rem;
+	height: 2.625rem;
+	margin: 0 auto;
+}
+.featureDisplayComponent .headingContainer::before, .featureDisplayComponent .headingContainer::after {
+		content: "";
+		display: inline-block;
+		width: 8%;
+		border-top: 1px solid #c2c2c2;
+		margin: 6px 10px;
+		display: inline-block;
+}
+.featureDisplayComponent .headingContainer{
+	text-align: center;
+}
+.featureDisplayComponent .catName{
+	color: var(--neutral-700, #666);
+	text-align: center;
+
+	/* Header/VUE/Header 6 - Semibold (VUE) */
+	font-family: "Open Sans";
+	font-size: 1.125rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.5rem; /* 133.333% */
+	padding-top:1rem;
+}
+.customBox{
+	border-radius: 0.5rem;
+	padding: 1rem;
+	margin:0.5rem 1.5rem;
+	border: 1px solid var(--neutral-300-divider, #DFE1E1);
+	background: #FFF;
+
+	/* Card shadow 0,3,12,0 */
+	box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.16);
+}
+
+.customBox:active{
+	border-radius: 0.5rem;
+border: 2px solid var(--primary-600, #007394);
+background: #FFF;
+box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.16);
+
+}
+.customBox:focus,.customBox:focus-within{
+	border-radius: 0.5rem;
+	border: 1px solid var(--Neutral-400, #C2C2C2);
+	background: #FFF;
+
+	/* Focus */
+	box-shadow: 0px 0px 2px 3px #219EA3;
+}
+.customBox:hover{
+	background-color: #E4FAFF!important;
+}
+.customBox:focus > .customBox:hover,.customBox:focus-within >.customBox:hover{
+	background-color: #E4FAFF;
+}
+
+@media  screen and (min-width: 480px) {
+}
+
+@media  screen and (min-width: 768px) {
+	.featureDisplayComponent{
+	padding: 1.5rem 0.75rem;
+	}
+	.featureDisplayComponent .headingContainer{
+		padding-bottom:1.25rem;
+	}
+	.featureDisplayComponent .featureHeading{
+		color: var(--Neutral-800, #333);
+		text-align: center;
+		font-feature-settings: 'clig' off, 'liga' off;
+		font-family: "Open Sans";
+		font-size: 1.5rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 2rem; /* 133.333% */
+		padding:0rem 1rem;
+	}
+	.featureDisplayComponent .headingContainer::before, .featureDisplayComponent .headingContainer::after {
+		content: "";
+		display: inline-block;
+		width: 23%;
+		border-top: 1px solid #c2c2c2;
+		margin: 6px 10px;
+	}
+		.customBox{
+		border-radius: 0.5rem;
+	
+		background: #FFF;
+		padding: 2.5rem 1.5rem;
+		margin:1.25rem;
+				border: 1px solid var(--neutral-300-divider, #DFE1E1);
+		background: #FFF;
+
+		/* Card shadow 0,3,12,0 */
+		box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.16);
+	}
+	.logoWrap{
+		width: 4.75rem;
+		height: 3.375rem;
+		margin: 0 auto;
+	}
+	.featureDisplayComponent .catName{
+		color: var(--neutral-700, #666);
+		text-align: center;
+		font-family: Open Sans;
+		font-size: 1.25rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 1.6875rem; /* 135% */
+		padding-top:1.5rem;
+	}
+}
+
+@media  screen and (min-width: 1024px) {
+	.featureDisplayComponent{
+		width:100%;
+		max-width: 75rem;
+		padding: 1.5rem 0.75rem;
+	}
+	.featureDisplayComponent .headingContainer{
+			padding-bottom:1.25rem;
+	}
+	.featureDisplayComponent .featureHeading{
+			color: var(--Neutral-800, #333);
+		text-align: center;
+		font-feature-settings: 'clig' off, 'liga' off;
+		font-family: "Open Sans";
+		font-size: 1.5rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 2rem; /* 133.333% */
+		padding:0rem 1rem;
+		
+	}
+	.featureDisplayComponent .headingContainer::before, .featureDisplayComponent .headingContainer::after {
+		content: "";
+		display: inline-block;
+		width: 31%;
+		border-top: 1px solid #c2c2c2;
+		margin: 6px 10px;
+	}
+	.customBox{
+		border-radius: 0.5rem;
+		padding: 2.5rem 1.5rem;
+		margin:1.25rem;
+		border: 1px solid var(--neutral-300-divider, #DFE1E1);
+		background: #FFF;
+
+		/* Card shadow 0,3,12,0 */
+		box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.16);
+	}
+	.logoWrap{
+		width: 4.75rem;
+		height: 3.375rem;
+		margin: 0 auto;
+	}
+	.featureDisplayComponent .catName{
+		color: var(--neutral-700, #666);
+		text-align: center;
+		font-family: Open Sans;
+		font-size: 1.25rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 1.6875rem; /* 135% */
+		padding-top:1.5rem;
+	}
+}
+
+.center {
+	text-align: center;
+}
+
+.custom {
+	padding-top: 38px;
+	padding-bottom: 38px; 
+}
+
+.catContainer{
+	display: flex;
+	width: 22.5rem;
+	padding: 2.5rem 1.5rem;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	flex: 1 0 0;
+}

@@ -1,0 +1,77 @@
+<template>
+	<div if:true={showCrumbs} onkeyup={keyboardHandler} onclick={ignore} class="pageNav">
+		<lightning-breadcrumbs id="nofocus" class="slds-breadcrumb">
+			<template for:each={pages} for:item="crumbs">
+				<lightning-breadcrumb  key={crumbs.name} label={crumbs.label} href={crumbs.url} name={crumbs.name} onclick={openHelpHomePopUP} 
+					class="slds-breadcrumb__item breadcrumbStyle">
+				</lightning-breadcrumb>
+			</template>
+			<template if:true={currentPageName}>
+				<label aria-hidden="true" class="divPadding">/</label>
+				<span>
+					<label class="currentPageNameStyle">{currentPageName} </label>
+				</span>
+			</template>
+		</lightning-breadcrumbs>
+	</div>
+
+	<!-- Modal Popup Confirmation -->
+	<div if:true={showPopUp}>
+		
+			<section role="dialog" tabindex="0" aria-modal="true" aria-label={labelBeforeYouGo}
+				class="slds-modal slds-fade-in-open slds-modal_small modalBox navOverlay" onkeyup={keyboardHandler} onfocusout={handleFocusOut} data-index="0">
+				
+				<div class="slds-modal__container customModal" data-id="breadCrumbModal" >
+					<div class="modalContainer" onclick={ignore}>
+					<template if:false={imageLoading}>
+					<div class="slds-modal__header modalHeaderBox" >
+						<div class="slds-clearfix slds-float_right">
+							<!-- Close button -->
+							<button id="closefocus" class="slds-button slds-button_icon closeButton" onclick={handleCloseClick} aria-label={labelClose}>
+							<i class="fa-solid fa-close closebtn"></i>							
+						</button>
+						</div>
+					</div>
+					<div class="slds-modal__content" >
+							<div class="slds-grid slds-wrap pb1_5">
+								<div class="slds-small-size_1-of-1 slds-medium-size_1-of-3 slds-large-size_1-of-3 slds-align_absolute-center pr1_5 showDesktop">
+									<img src={hikingImage} class="overlay_image" />
+								</div>
+								<div class="slds-small-size_1-of-1 slds-medium-size_2-of-3 slds-large-size_2-of-3 ">
+									<div class="slds-row">
+										<h2 class="modalHeading">{labelBeforeYouGo}</h2>
+										<p class="modalDesc pb1_5"> {labelHelpHomePopUpMessage} </p>
+										<p class="modalDesc"> {labelDoyouwanttocontinue} </p>
+									</div>
+								</div>
+							</div>
+					</div>
+					<div class="slds-modal__footer" role="group" aria-label={labelDoyouwanttocontinue}>
+						<button class="slds-button slds-button_base " variant="base" onclick={handleNoButtonClick} >{labelNo}</button>
+						<button class="slds-button slds-button_brand yesButton" variant="brand" onclick={handleYesButtonClick} >{labelYes}</button>
+					</div>
+					<div class="slds-grid slds-wrap">
+								<div class="slds-small-size_1-of-1 slds-align_absolute-center showMobile text-center">
+									<img src={hikingImage} class="overlay_image" />
+								</div>
+					</div>
+					</template>
+					<template if:true={imageLoading}>
+						<lightning-modal-body>
+						<div class="slds-is-relative slds-align_absolute-center slds-var-p-around_xx-large">
+							<div class="lds-ring">
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+						</div>
+						</lightning-modal-body>
+					</template>
+				</div>
+				</div>
+			</section>
+		<div class="slds-backdrop slds-backdrop_open" tabindex="0" data-index="1"></div>
+		
+	</div>
+</template>

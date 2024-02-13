@@ -1,0 +1,72 @@
+<template>
+	<!-- Main div element with form control class -->
+	<div class="slds-grid slds-grid_align-center">
+		<div class="slds-col slds-size_1-of-1 searchBoxComponent">
+			<div class="slds-form-element__control">
+				<!-- Combobox container with dynamic class -->
+				<div class={comboboxContainerClass}>
+					<!-- Combobox with dynamic class -->
+					<div class={comboboxClass}>
+						<!-- Form element with role none -->
+						<div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right"
+							role="search">
+							<!-- Input element -->
+							<i class="fa-solid fa-magnifying-glass faSearchIcon"></i>
+							<input tabindex="0" type="text" class={inputClass} value={keyword} id="combobox"
+								aria-autocomplete="list" aria-controls="listbox" aria-expanded={comboboxIsOpen}
+								autocomplete="off" role="combobox" aria-label={searchbarplaceholder}
+								placeholder={searchbarplaceholder} onfocus={focusCombobox} onblur={blurCombobox}
+								oninput={handleSearchInput} aria-activedescendant={focusedOption}
+								onkeydown={handleKeyDown} />
+							<span
+								class="slds-icon_container slds-icon-utility-search slds-input__icon slds-var-p-right_large closeSearchIconWrap"
+								if:true={showCross} style="pointer-events:all !important; cursor: pointer;"
+								onclick={clearInputHandler} onkeypress={clearInputHandlerOnEnterPress} tabindex="0"
+								role="button" aria-label={clearsearchlabel}>
+								<i class="fa-solid fa-circle-xmark closeSearchIcon" aria-hidden="true"></i>
+							</span>
+						</div>
+						<div if:true={suggestionOptions.length} id="listbox" style="width: 100%;"
+							class="slds-dropdown slds-dropdown_length-6 slds-dropdown_fluid"
+							onmousedown={handleDropdownMouseDown} onmouseup={handleDropdownMouseUp}>
+							<ul class="slds-listbox slds-listbox_vertical" aria-modal="true" role="presentation">
+								<li class="slds-listbox__item" for:each={tempOptions} for:item="option"
+									key={option.value} role="presentation" aria-label={option.label}>
+									<div id={option.value} class={option.classes} data-value={option.value}
+										data-focused={option.focused} onclick={handleSelect} role="option"
+										tabindex="-1">
+										<!-- <span class="sr-only" aria-label={option.label}>{option.label}</span> -->
+										<span class="slds-media__figure slds-listbox__option-icon">
+											<lightning-icon icon-name={iconName} aria-hidden="true" title={iconTitle}
+												size="x-small"></lightning-icon>
+										</span>
+										<span class="slds-media__body">
+											<span title={option.label} class="suggestionOption"
+												aria-label={option.label}>
+												{option.label}
+											</span>
+										</span>
+										<!--Arrow mark svg in the suggestion options-->
+										<i class="fa-regular fa-arrow-up-right rightArrowIcon"></i>
+									</div>
+								</li>
+								<template if:true={showViewAllOption}>
+									<li key={viewAllLabel} class="slds-listbox__item alignViewAll" role="presentation"
+										onkeydown={handleEnter}>
+										<div class={viewAllClass} role="option" tabindex="-1" onkeydown={handleEnter}
+											id={viewAllLabel}>
+											<a onclick={handleViewAll} onkeydown={handleEnter}
+												class="slds-align_absolute-center" aria-label={viewAllAria}>
+												<p> {viewAllLabel} {size} {resultsLabel} </p>
+											</a>
+										</div>
+									</li>
+								</template>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This LMS is used by different components in the Self Help portal to publish/subscribe.</description>
+    <isExposed>true</isExposed>
+    <lightningMessageFields>
+        <description>Field to pass clientCode</description>
+        <fieldName>clientCode</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>Field to pass keyword</description>
+        <fieldName>keyword</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>Field to pass category</description>
+        <fieldName>category</fieldName>
+    </lightningMessageFields>
+    <masterLabel>shpMessageChannel</masterLabel>
+</LightningMessageChannel>

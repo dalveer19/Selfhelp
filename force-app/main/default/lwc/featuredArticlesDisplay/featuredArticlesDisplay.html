@@ -1,0 +1,35 @@
+<template>
+	<div class="slds-grid slds-grid_align-center slds-wrap ">
+		<div class=" featureDisplayComponent">
+			<div class="slds-col  slds-small-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1">
+				<div class="headingContainer">
+					<h4 class="featureHeading" aria-level="2">{label_Featured_articles}</h4>
+				</div>
+			</div>
+			<div if:false={featuredArticlesLoading}>
+				<div class="slds-grid slds-gutters_x-small slds-wrap articleWrapper" if:true={articles}>
+					<template for:each={articles} for:item="article" key={article.Id}>
+						<div key={article.truncatedTitle} class="paddingArticleBox slds-col slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-2">
+							<p class="featureArticleTitle pb1rem">
+								<a tabindex="0" href={article.url} onclick={handleRecordClick} onkeypress={handleRecordKeyPress} name={article.recordId}>
+									{article.truncatedTitle}
+								</a>
+							</p>
+							<p class="articleSummary">{article.truncatedSummary}</p>
+						</div>
+					</template>
+				</div>
+			</div>
+			<div if:true={featuredArticlesLoading}>
+				<div class="slds-is-relative slds-align_absolute-center slds-var-p-around_xx-large">
+					<div class="lds-ring">
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>

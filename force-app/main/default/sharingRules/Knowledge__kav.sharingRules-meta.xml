@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingGuestRules>
+        <fullName>Article_Visibility</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Article Visibility</label>
+        <sharedTo>
+            <guestUser>SelfHelpClone</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>Article_visiblity_for_candidate__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+    <sharingGuestRules>
+        <fullName>Self_Help_Guest</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Self Help Guest</label>
+        <sharedTo>
+            <guestUser>Self_help</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>Article_visiblity_for_candidate__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+</SharingRules>

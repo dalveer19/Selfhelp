@@ -1,0 +1,73 @@
+{
+  "appPageId" : "998c2199-5d1b-4626-a2a2-2cbf96344ad3",
+  "componentName" : "c:LandingPageTemplate",
+  "dataProviders" : [ ],
+  "id" : "c3c71803-6988-46ac-bdc5-1a183c3e9d8f",
+  "label" : "Article Details Page",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:header_SH",
+      "id" : "d5355539-087c-42da-bf7b-781425f6173b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ca58616c-3751-4b1c-b849-42eb29470a1b",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "9ef2efb9-1a63-4a6d-b067-acd57377ac36",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:footer_SH",
+      "id" : "06e48b6d-9395-417f-b761-3fa4b766d3ac",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "0c79f9d0-5264-491e-adac-9e2819cdd4c2",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Article Details Page"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "38f6f2eb-a7ca-4b50-8853-8c778d4d2703",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "4d3f2a57-b548-4ebf-9f5d-fd9327c0e03f",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:gTagManager",
+      "id" : "f1a2713c-ded3-4849-bf42-34c6cea18390",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "c:knowledgeArticleDetails",
+      "id" : "933f7da5-02bb-4c36-80e6-f641a35e129b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6c29e00c-a309-4b71-a777-51adb0a12687",
+    "regionName" : "main",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-article-details-page"
+}

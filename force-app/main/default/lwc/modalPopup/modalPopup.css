@@ -1,0 +1,661 @@
+.modalBox{
+    top: 10px;
+    bottom: 54px;
+}
+.modalBox .modalHeaderBox{
+    padding: 2rem 1.5rem 0rem 1.5rem;
+    background: var(--neutral-100, #F5F6F8);
+     border-width: 0;
+}
+.modalContainerBox{
+   /* min-width: 95%;*/
+  
+}
+ .hidden{
+     display: none;
+ }
+ .spinnerBox {
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 18px;
+ }
+
+.modalBox .modalConainer{
+        border-radius: 0.5rem;
+background: var(--neutral-100, #F5F6F8);
+    padding: 2.5rem 2rem;
+    background: var(--neutral-100, #F5F6F8);
+}
+.modalBox .errordiv{
+    padding-left:0.6rem;
+    padding-right:2rem;
+    padding-bottom:2.5rem;
+}
+.modalBox .modalHeader4{
+    color: #000;
+    font-family: Open Sans;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.6875rem; 
+    padding-bottom:0.5rem;
+}
+.modalBox .topPaddingSearch{
+    padding-top:1.5rem;
+}
+.modalBox .closebtn{
+    color: var(--neutral-700, #666);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Font Awesome 6 Pro"!important;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+ 
+
+}
+.flagwidth{
+    width: 5%!important;
+}
+
+
+.modalBox .modalDesc {
+   color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Open Sans;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.modalBox .modalDescBold{
+    color: var(--neutral-900-black, #000);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Open Sans;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top:0.25rem;
+}
+.modalBox .selectProgram{
+    color: var(--neutral-700, #666);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Overline/Default */
+    font-family: Open Sans;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1rem; /* 133.333% */
+    letter-spacing: 0.07813rem;
+    text-transform: uppercase;
+    padding-top:0rem;
+}
+.modalBox .arrowIcon{
+    color: var(--neutral-700, #666);
+text-align: center;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: "Font Awesome 6 Pro"!important;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-left:0.75rem;
+}
+.modalBox .removeLink{
+    color: var(--primary-600, #007394);
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Open Sans;
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-decoration-line: underline;
+}
+.modalBox .removeLink:focus, .modalBox .removeLink:hover, .modalBox .removeLink:active{
+    text-decoration: underline!important;
+}
+.modalBox .searchInput{
+    padding: 1rem 1rem 1rem 2.3rem;
+    border-radius: 0.375rem;
+    border: 1px solid var(--neutral-700, #666);
+    background: #FFF;
+    color: var(--neutral-700, #000);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 150% */
+}
+.modalBox .searchInput:hover{
+    border: 3px solid var(--neutral-700, #666);
+}
+.modalBox .searchInput:focus{
+    border-radius: 0.375rem;
+border: 3px solid var(--primary-600, #007394);
+background: #FFF;
+}
+.modalBox .searchInput ::placeholder{
+    padding: 1rem 1rem 1rem 2.3rem;
+    border-radius: 0.375rem;
+    border: 1px solid var(--neutral-700, #666);
+    background: #FFF;
+    color:  #666!important;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 150% */
+}
+
+.modalBox .faSearchIcon{
+    position: absolute;
+    top: 22px;
+    left: 15px;
+    color: var(--neutral-700, #666);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 1rem;
+    font-style: normal;
+     font-weight: 400; 
+    line-height: normal;
+    font-family: "Font Awesome 6 Pro"!important;
+}
+.modalBox .bellIcon{
+    padding-right:0.25rem;
+    color: var(--alert-800, #EA8615);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Font Awesome 6 Pro"!important;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal; /* 133.333% */
+   /* width: 1.5rem;*/
+    height: 1.5rem;
+    padding-right:0.5rem;
+    
+  
+}
+.modalBox .searchTips{
+    color: var(--neutral-800, #333);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    padding-bottom:0.5rem;
+    line-height: normal;
+}
+li.searchTips{
+    padding-bottom: 0px!important;
+    line-height: normal;
+}
+.modalBox .fontW400{
+    font-weight: 400;
+}
+.modalBox .fw600{
+     font-weight: 600;
+}
+.modalBox .pt1_5{
+    padding-top:1.5rem;
+}
+.modalBox .noResultInfo{
+    color: var(--neutral-800, #333);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Open Sans;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.modalBox .getAssist{
+    color: var(--primary-600, #007394);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Open Sans;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+.modalBox .ml_5{
+    margin-left:0.5rem!important;
+}
+.modalBox .noResultFound{
+      color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Open Sans;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+    padding-top:0.375rem;
+}
+
+.modalBox .iconCloseSearchBar{
+    position: absolute;
+    right: 8px;
+    top: 24%;    
+}
+.modalBox .closeSearchIcon{
+    color: var(--neutral-700, #666);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Font Awesome 6 Pro"!important;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+.modalBox .iconCloseSearchBar:focus{
+    outline: none !important;
+}
+.modalBox .iconCloseSearchBar:focus .closeSearchIcon{
+    border-radius: 1.5625rem;
+    outline: none!important;
+    box-shadow: 0px 0px 2px 3px #219EA3;
+}
+.modalBox .iconCloseSearchBar:active .closeSearchIcon{
+    border-radius: 1.5625rem;
+    outline: none!important;
+    box-shadow: 0px 0px 2px 3px #219EA3;
+}
+.modalBox .iconCloseSearchBar:hover .closeSearchIcon{
+    border-radius: 1.5625rem;
+    outline: none!important;
+    background: #F0F0F0;
+    border: #C2C2C2;
+}
+.modalClass {
+    position: absolute;
+    right: 0%;
+    top:0%;
+    z-index:0;
+    width: 50%;
+    
+}
+.mob_cen_result{
+    text-align: left;
+}
+.bgImage{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    background-image: url('/sfsites/c/resource/Self_help/SelfHelp/Icons/clientSelectionModal.png');
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    z-index: 0;
+    background-position: right;
+}
+/*.modalHeaderBox{
+    border-width: 0;    
+    padding: 2% 2% 0 1%;
+    z-index: 1;
+}*/
+.modalContentBox{
+    min-height: 90%;
+     overflow-y: hidden;
+     padding: 1.125rem 0.4375rem 2.5rem 1rem;
+   background: var(--neutral-100, #F5F6F8);
+   z-index: 1;
+}
+.clientsContainerBox{
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right: 5px;
+}
+.clientsContainerBox::-webkit-scrollbar-thumb{
+    border-radius: 0.625rem!important;
+    background: #D4D4D4!important;
+}
+.clientsContainerBox::-webkit-scrollbar{
+    background-color: #f5f5f5;
+    margin-top: 1rem;
+    z-index: 99;
+    width: 6px;
+}
+.clientsContainerBox::-webkit-scrollbar-button{
+    display: none!important;
+}
+.modalContentBox .clientInfoContainer{
+     border-radius: 0.5rem;
+border: 1px solid var(--neutral-400, #C2C2C2);
+background: var(--neutral-50-white, #FFF);
+}
+
+.modalContentBox .clientInfoContainer:hover{
+    border-radius: 0.5rem;
+    border: 1px solid var(--neutral-400, #C2C2C2);
+    background: var(--primary-50, #E4FAFF);
+    box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.16);
+    color: var(--neutral-700, #666) !important;
+}
+.modalContentBox .clientInfoContainer:active{
+    border-radius: 0.5rem;
+border: 2px solid var(--primary-400, #4596B8);
+background: var(--neutral-50-white, #FFF);
+box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.16);
+color: var(--neutral-700, #666) !important;
+}
+
+.modalContentBox .clientInfoContainer:focus{
+ border-radius: 0.5rem;
+border: 1px solid var(--neutral-400, #C2C2C2);
+background: var(--neutral-50-white, #FFF);
+
+box-shadow: 0px 0px 2px 3px #219EA3;
+}
+.modalContentBox .clientInfoContainer:focus-visible{
+ outline: none!important;
+}
+button.closeButton{
+    border-radius: 6.25rem;
+    background: rgba(255, 255, 255, 0.50);
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    margin-top: -14px;
+}
+button.closeButton:hover {
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    BORDER: 1px solid #c2c2c2;
+    padding:0.2rem;
+
+}
+button.closeButton:focus {
+    border-radius: 50%;
+	border: 1px solid #C2C2C2;
+    background-color: #f0f0f0;
+    box-shadow: 0px 0px 2px 3px #219EA3;
+    padding:0.2rem;
+}
+button.closeButton:active{
+    background-color: #fff;
+    BORDER: 1px solid #c2c2c2;
+}
+button.closeButton:focus-visible {
+     outline: none!important;
+}
+.clientName {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    min-height: 4.0625rem; 
+    text-decoration: none; 
+    background-color: white;
+    padding:0.75rem 1rem;
+    color: var(--neutral-700, #666);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0.375rem;
+    }
+.arrowIcon{
+    margin-left: auto;
+}
+.bold-text {
+    font-weight: bold;
+    font-size: 16px; 
+    color: #333; 
+}
+.normal-text {
+    font-size: 14px;
+    color: #666; 
+}
+.header-text {
+    text-align: left;
+   
+}
+a.titlecolor{
+	color : #080808;
+    font-size: 12px;
+}
+.bannerMessage{
+     background: var(--Complementary-50, #E7F6F7);
+    margin: -2.5rem -1.5rem 1.5rem -1.5rem;
+    position:relative;
+    z-index: 1;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+     padding: 0.75rem 1.5rem;
+}
+.bannerMessagetext{
+     color: var(--Neutral-900-Black, #000);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Open Sans";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+     text-align: left;
+     padding-left:1rem;
+    
+}
+
+.msgBold{
+    font-weight: 700;
+    line-height: normal;
+}
+.flagIcon{
+    color: var(--Primary-300, #63AACA);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Font Awesome 6 Pro"!important;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  
+    padding-top:1.4rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+.floatLeft{
+  float: left;
+}
+.flagBox{
+   /* padding-right:1rem;*/
+}
+@media  screen and (min-width: 580px) {
+  .flagIcon{
+       padding-top:0.6rem;
+  }
+}
+
+@media  screen and (min-width: 320px) and (max-width:767px) {
+	 .slds-modal__container {
+        position: relative;
+        transform: translate(0, 0);
+        transition: transform var(--lwc-durationQuickly,0.1s) linear,opacity var(--lwc-durationQuickly,0.1s) linear;
+        display: flex;
+        flex-direction: column;
+        margin:0px!important;
+        padding:0px!important;
+     
+        border-radius: var(--lwc-borderRadiusMedium,0.25rem);
+        width: 100%;
+        height: auto!important;
+    }
+}
+@media  screen and (min-width: 768px) {
+    .modalBox{
+        top: 99px;
+        bottom: 54px;
+    }
+    .bannerMessage{
+        margin: -2.5rem -2rem 2.63rem -2rem;
+        position:relative;
+        z-index: 1;
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+    }
+    .modalBox .topPaddingSearch{
+    padding-top:2rem;
+    }
+    .modalBox .modalHeader4{
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 2rem; /* 133.333% */
+        padding-bottom:0.5rem;
+    }
+    .modalBox .modalHeaderBox{
+        padding: 2.5rem 2rem 0rem 2rem;
+    }
+    .modalContentBox{
+        padding: 1.5rem 0.6875rem 2.5rem 1.4rem;
+    }
+    .modalBox .modalDesc {
+       font-size: 1rem;
+       font-weight: 400;
+        line-height: normal;
+    }
+    .modalBox .modalDescBold{
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-top:0.25rem;
+    }
+    .modalBox .removeLink{
+        font-size: 0.875rem;
+    }
+       .modalBox .noResultFound{
+        font-size: 1.25rem;
+        line-height: 1.6875rem;
+         padding-bottom: 1.5rem;
+         padding-top:0rem;
+    }
+    .modalBox .bellIcon{
+        font-size: 1.5rem;
+         padding-right:0.5rem;
+          line-height: normal;
+    }
+    .modalBox .getAssist{
+        font-weight: 600;
+    }
+    .mob_cen_result{
+    text-align: left;
+    }
+    .modalBox .closebtn{
+    font-size: 2rem;
+    
+    }
+    button.closeButton{
+        margin-top:0px;
+    }
+    .clientName{
+        margin: 0.5rem;
+    }
+    .clientsContainerBox{
+        padding-right: 7px;
+    }
+    .spinnerBox{
+        margin-right: 21px;
+    }
+    .flagIcon{
+        padding-top:0.3rem;
+    }
+    .bannerMessagetext{
+        line-height: 1.5rem; 
+    }
+    .slds-modal__container{
+        width:43.9375rem;
+    }
+    .modalBox .selectProgram{
+        padding-top:0.5rem;
+    }
+}
+
+
+
+@media  screen and (min-width: 1024px) {
+    .modalBox{
+        top: 99px;
+        bottom: 54px;
+    }
+    .modalBox .modalHeader4{
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 2rem; /* 133.333% */
+    }
+     .modalBox .modalHeaderBox{
+        padding: 2.5rem 2rem 0rem 2rem;
+    }
+    .modalBox .modalDesc {
+       font-size: 1rem;
+       font-weight: 400;
+        line-height: normal;
+    }
+     .modalBox .modalDescBold{
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-top:0.25rem;
+    }
+      .modalBox .removeLink{
+        font-size: 0.875rem;
+    }
+    .modalBox .noResultFound{
+        font-size: 1.25rem;
+        line-height: 1.6875rem;
+         padding-bottom: 1.5rem;
+         padding-top:0rem;
+    }
+    .modalBox .bellIcon{
+        font-size: 1.5rem;
+          padding-right:0.5rem;
+          line-height: normal;
+    }
+     .modalBox .getAssist{
+        font-weight: 600;
+    }
+    .mob_cen_result{
+    text-align: left;
+    }
+    .modalBox .closebtn{
+    font-size: 2rem;
+     
+    }
+      button.closeButton{
+        margin-top:0px;
+    }
+    .modalContentBox{
+        padding: 1.5rem 0.5625rem 2.5rem 1.4rem;
+    }
+    .clientsContainerBox{
+        padding-right: 10px;
+    }
+    .spinnerBox{
+        margin-right: 23px;
+    }
+    .flagIcon{
+        padding-top:0.3rem;
+    }
+    .bannerMessagetext{
+        line-height: 1.5rem; 
+    }
+      .slds-modal__container{
+        width:62rem;
+    }
+      .modalBox .selectProgram{
+        padding-top:0.5rem;
+    }
+}

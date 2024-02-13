@@ -1,0 +1,134 @@
+{
+  "activeBrandingSetId" : "4f5a3933-c5c2-4da0-a92b-fa3eb69a0089",
+  "customCSS" : ".siteforceContentArea .comm-layout-column {\n    padding : 0 !important;\n}\n\n*{\n  font-family: 'Open Sans' !important;\n}\n\n.slds-col--padded .comm-layout-column {\n     padding : 0 !important;\n     margin :  0 !important; \n} \n\n.siteforceStarterBody .cCenterPanel {\n    padding : 0 !important;\n     margin :  0 !important; \n}\n\n.siteforceContentArea .cb-section_column .ui-widget {\n    padding : 0 !important;\n     margin :  0 !important; \n}\n\n.forceCommunitySection .cb-section_column {\n    padding : 0 !important;\n     margin :  0 !important; \n}\n\n/** FOR RADIO BUTTONS IN THE SEARCH COMPONENT **/\n  .searchRadio .slds-radio .slds-form-element__label {\n      font-family: Open Sans !important;\n    font-size: 1rem !important;\n    font-style: normal !important;\n    font-weight: 400 !important;\n    line-height: normal !important;\n   color:  #000 !important;\n  \n}\n    .slds-radio_faux{\n               width:1.375rem!important;\n      height:1.375rem!important;\n    }\n.slds-radio_faux:after{\n        width: 0.7rem!important;\n    height: 0.7rem!important;\n}\n.slds-radio [type=radio]:checked+.slds-radio__label .slds-radio_faux{\nborder-color:#007394!important;\n    \n}\n.slds-radio [type=radio]:focus+.slds-radio__label .slds-radio_faux:before {\n    content: '';\n    width: 2.6rem;\n    height: 2.6rem;\n    outline: 3px solid #219EA3;\n    border: 1px solid #C2C2C2;\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    transform: translate3d(-50%,-50%, 0);\n    border-radius: 100px;\n    filter: blur(0.5px);\n}\n.slds-radio [value=iknow][type=radio]:focus+label:after{\n    content: \"Press enter to open dialog\";\n    position: absolute;\n    width: 1px;\n    height: 1px;\n    overflow: hidden;\n}\n.slds-radio [type=radio]:hover+.slds-radio__label .slds-radio_faux:before {\n    content: '';\n    width: 2.6rem;\n    height: 2.6rem;\n    border: 1px solid #C2C2C2;\n\tbackground-color: rgba(0, 0, 0, 0.06);\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    transform: translate3d(-50%,-50%, 0);\n    border-radius: 100px;\n}\n\n.slds-radio [type=radio]+.slds-radio__label .slds-radio_faux{\n    margin-right:0.75rem!important;\n    pointer-events : all !important;\n     border-radius: 6.25rem;\n    border: 1.5px solid var(--neutral-700, #666);\n    background: #FFF;\n}\n.modalOptions .slds-radio .slds-form-element__label{\n    font-size:1rem!important;\n}\n\n.searchHeaderComponentWrapper .SearchBarSection .searchBar .searchBoxComponent{\n\t\tpadding-bottom:0px!important;\n\t}\na:focus, a:focus-within{\n   background: rgba(255, 255, 255, 0.00);\n\tbox-shadow: 0px 0px 2px 3px #219EA3;\n    outline: none;\n    text-decoration:none!important;\n    }\n\na:active{\n    color: var(--accent-dark-royal-purple-500, #9E007E)!important;\n}\na:hover{\n\tcolor: var(--primary-900, #003057)!important;\n    text-decoration:none!important;\n}\n\n\n.slds-input :hover{ \n\tborder-radius: 0.375rem!important;\n\tborder: 3px solid var(--neutral-700, #666)!important;\n\tbackground: #FFF!important;\n}\n\n\n.slds-input :focus { \n\tborder-radius: 0.375rem!important;\n\tborder: 3px solid var(--primary-600, #007394)!important;\n\tbackground: #FFF!important;\n}\n/* breadcrumb */\n.slds-breadcrumb .slds-breadcrumb__item>a:hover{\n     color: var(--primary-900, #003057)!important;\n    text-decoration:none!important;\n}\n.slds-breadcrumb .slds-breadcrumb__item>a:active{\n    color: var(--accent-dark-royal-purple-500, #9E007E)!important;\n}\n\n\n.slds-breadcrumb .slds-breadcrumb__item:focus, .slds-breadcrumb .slds-breadcrumb__item:focus-visible{\n     background: rgba(255, 255, 255, 0.00)!important;\n\tbox-shadow: 0px 0px 2px 3px #219EA3!important;\n    outline: none!important;\n    text-decoration:none!important;\n}\n.slds-breadcrumb .slds-list__item>a, .slds-breadcrumb .slds-breadcrumb__item>a {\n    color: var(--primary-600, #007394)!important;\n    font-feature-settings: 'clig' off, 'liga' off;\n    text-overflow: ellipsis!important;\n    /* Text link/Underlined/Bold--14 */\n    font-family: Open Sans !important;\n    font-size: 0.75rem !important;\n    font-style: normal;\n    font-weight: 700!important;\n    line-height: normal!important;\n    text-decoration-line: underline!important;\n    padding-right:0.2rem!important;\n }\n.slds-breadcrumb .slds-list__item>a:focus, .slds-breadcrumb .slds-breadcrumb__item>a:focus{\n    box-shadow: 0px 0px 2px 3px #219EA3;\n    background: rgb(255,255,255, 0.00);\n}\n.slds-dropdown_fluid{\n    padding-top:0.5rem!important;\n    padding-bottom:0.5rem!important;\n    border-radius: 0.25rem!important;\n    background: var(--Neutral-50-White, #FFF)!important;\n    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25)!important;\n}\n\n@media  screen and (min-width: 480px) {\n html{\n        font-size:16px!important;\n    }\n  \n}\n@media  screen and (min-width: 767px) {\n      html{\n        font-size:16px!important;\n    }\n    .slds-radio_faux{\n               width:1.375rem!important;\n      height:1.375rem!important;\n    }\n     .searchRadio .slds-radio .slds-form-element__label {\n      font-family: Open Sans !important;\n    font-size: 1rem !important;\n    font-style: normal !important;\n    font-weight: 400 !important;\n    line-height:normal !important;\n   color:  #000 !important;    \n\n}\n .pagenavContainer .pageNav{\n    padding-left:0rem!important;\n}\n    .slds-breadcrumb .slds-list__item>a, .slds-breadcrumb .slds-breadcrumb__item>a {\n        font-size:0.875rem!important;\n    }\n  \n}\n@media  screen and (min-width: 1024px) {\n     .slds-breadcrumb .slds-list__item>a, .slds-breadcrumb .slds-breadcrumb__item>a {\n        font-size:0.875rem!important;\n    }\n  \n    .pagenavContainer .pageNav{\n    padding-left:0rem!important;\n}\n .searchRadio .slds-radio .slds-form-element__label {\n      font-family: Open Sans !important;\n    font-size: 1rem !important;\n    font-style: normal !important;\n    font-weight: 400 !important;\n    line-height:normal !important;\n   color:  #000 !important;    \n\n}\n        .slds-radio_faux{\n               width:1.375rem!important;\n      height:1.375rem!important;\n            border-radius: 6.25rem!important;\n            background: var(--neutral-50-white, #FFF)!important;\n            border: 1.5px solid var(--neutral-700, #666)!important;\n    }\n    \n}\n\n/******* TO SHOW SPINNING BALLS ******/\n.siteforceLoadingBalls{\n    visibility: visible !important;\n}\n\n.siteforcePanelsContainer .assistiveText {\n    display: contents !important;\n    color: black !important;\n    position: absolute !important;\n}\n\n.siteforceLoadingBalls .loadingBall {\n    box-sizing: border-box;\n    display: block;\n    position: absolute;\n    width: 64px;\n    height: 64px;\n    margin: -66px;\n    margin-left: 5px;\n    border: 8px solid #007394;\n    border-radius: 50%;\n    animation: lds-ring 1.2s cubic-bezier(0.5, 0.5, 0.5, 1) infinite;\n    border-color: #007394 transparent transparent transparent;\n    /* display: inline-block; */\n    /* width: 1em; */\n    /* height: 1em; */\n    /* border-radius: 1em; */\n    /* animation: bouncedelay 1.4s infinite ease-in-out; */\n    /* animation-delay: -0.1s; */\n    /* animation-fill-mode: unset; */\n     background-color: transparent !important\n    /* margin-right: 16px; */\n}\n.siteforceLoadingBalls.global {\n    padding-top:81px!important;\n    background: none !important;\n}\n\n.siteforceSpinnerManager .mask {\n    background-color: var(--lwc-globalSpinnerBackground,rgba(255,255,255,0.8)) !important;\n    opacity: 1 !important;\n    position: fixed !important;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n    display: block;\n    z-index: 99999;\n    margin-left : 0px !important;\n}\n\n/**********************************/\n.lds-ring,\n.lds-ring div {\n  box-sizing: border-box;\n}\n.lds-ring {\n  display: inline-block;\n  position: relative;\n  width: 80px;\n  height: 80px;\n}\n.lds-ring div {\n  box-sizing: border-box;\n  display: block;\n  position: absolute;\n  width: 64px;\n  height: 64px;\n  margin: 8px;\n  border: 8px solid #007394;\n  border-radius: 50%;\n  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;\n  border-color: #007394 transparent transparent transparent;\n}\n.lds-ring div:nth-child(1) {\n  animation-delay: -0.45s;\n}\n\n.lds-ring div:nth-child(2) {\n  animation-delay: -0.3s;\n}\n.lds-ring div:nth-child(3) {\n  animation-delay: -0.15s;\n}\n@keyframes lds-ring {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}",
+  "developerName" : "starter",
+  "id" : "695ef44b-37ea-4d18-b234-b0b49e7924d2",
+  "label" : "Build Your Own",
+  "layouts" : {
+    "Inner" : "615b2788-a21c-49da-806c-759035dab902",
+    "Login" : "e7bf0fca-06f3-4d50-a3d1-9e29e4444519",
+    "ServiceNotAvailable" : "162f8953-2bc6-467e-a520-87beec2fdafb"
+  },
+  "type" : "theme",
+  "views" : [ {
+    "componentAttributes" : { },
+    "componentName" : "salesforceIdentity:loginBody2",
+    "id" : "e7bf0fca-06f3-4d50-a3d1-9e29e4444519",
+    "label" : "Login",
+    "regions" : [ {
+      "id" : "ef911984-3404-4824-80d6-dd089c3c21a0",
+      "regionName" : "header",
+      "type" : "region"
+    }, {
+      "id" : "589db2dc-477e-4503-bb19-6481dbf671b3",
+      "regionName" : "content",
+      "type" : "region"
+    }, {
+      "id" : "06de5e72-5b45-4d4e-aaab-6e8a6a21d5b0",
+      "regionName" : "footer",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : {
+      "fixedPageWidth" : 1440,
+      "isPageWidthFixed" : false
+    },
+    "componentName" : "siteforce:starterBody",
+    "id" : "615b2788-a21c-49da-806c-759035dab902",
+    "label" : "Default",
+    "regions" : [ {
+      "components" : [ {
+        "componentAttributes" : {
+          "contineActionLabel" : "Ask the community",
+          "continueLabel" : "Don’t see it?",
+          "crossObjectTypeaheadApiNames" : "",
+          "disableCrossObjectRelevance" : false,
+          "enableAutocomplete" : true,
+          "maxNumberOfResults" : 6,
+          "placeholder" : "Search...",
+          "questionResultsFirst" : false,
+          "showContinueAction" : true,
+          "showDetails" : false,
+          "showTopics" : true,
+          "signInActionLabel" : "Sign in to ask the community"
+        },
+        "componentName" : "forceCommunity:searchBox",
+        "id" : "ad098a87-24b8-41e1-9cda-7da65826b43a",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "f24ab364-8f16-43de-8636-5f26a9f4b746",
+      "regionName" : "search",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "accountManagementLabel" : "Account Management",
+          "communityBuilderLabel" : "Experience Builder",
+          "communitySetupLabel" : "Salesforce Setup",
+          "contactSupportLabel" : "Contact Support",
+          "filterName" : "MyCases",
+          "homeLabel" : "Home",
+          "includeContactSupport" : true,
+          "includeMessages" : false,
+          "loginLabel" : "Login",
+          "logoutLabel" : "Logout",
+          "myAccountLabel" : "My Account",
+          "showAccountManagement" : true,
+          "showUserSettings" : true,
+          "userSettingsLabel" : "My Settings",
+          "viewProfileLabel" : "My Profile"
+        },
+        "componentName" : "selfService:userProfileMenu",
+        "id" : "777029d9-a0df-4895-a669-ef75cf17a120",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "258b66e6-e814-4fa3-bf59-632a903118c2",
+      "regionName" : "profileMenu",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "NavigationMenuEditorRefresh" : "",
+          "alignment" : "left",
+          "showAppLauncher" : false,
+          "showBackLabel" : false,
+          "showHomeLink" : true
+        },
+        "componentName" : "forceCommunity:multiLevelNavigationWrapper",
+        "id" : "bcd75471-db82-48af-b723-2d727bfecb5d",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "d37828d1-d471-462d-84bd-a226283d10e3",
+      "regionName" : "navBar",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : {
+      "fixedPageWidth" : 1170,
+      "headerBgColor" : "rgba(0, 0, 0, 0)",
+      "isHeaderPinned" : false,
+      "isHeroUnderHeader" : false,
+      "isPageWidthFixed" : true,
+      "showHeader" : true,
+      "showHero" : true
+    },
+    "componentName" : "siteforce:themeLayoutStarter",
+    "id" : "162f8953-2bc6-467e-a520-87beec2fdafb",
+    "label" : "ServiceNotAvailable",
+    "regions" : [ {
+      "id" : "c66a707c-fa7b-4d2f-93f0-108a7e844663",
+      "regionName" : "themeHeader",
+      "type" : "region"
+    }, {
+      "id" : "4854a23e-f2cc-4993-a2e2-d0e530f5c880",
+      "regionName" : "themeFooter",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  } ]
+}

@@ -1,0 +1,350 @@
+.bgcolor {
+    position: relative;
+    background: #E7F6F7;
+    min-height: 20rem;
+    overflow: visible;
+     padding-left:1.5rem;
+        padding-right: 1.5rem;
+}
+
+ .clientClass {
+    position: absolute;
+    right: 0%;
+    width: 8.8125rem;
+    height: 10rem;
+    opacity: 0.4;
+    mix-blend-mode: multiply;
+}
+
+
+.clientSelectionClass {
+  
+    padding-top:2.5rem;
+     padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    width : 100% !important;
+}
+.clientSelectionClassWrapper{
+    max-width: 75rem;
+    width: 100%;
+    margin: 0 auto;
+ }
+
+.clientSelectionClassSearch {
+    padding-left: 1.5rem !important;
+     padding-right: 1.5rem !important;
+    width: 100%;
+}
+.clientSelectionClass .logo_size{
+    width: 13.6875rem;
+    height: 5.37516rem;
+}
+.clientSelectionClass .header4{
+    color: var(--neutral-900-black, #000);
+    font-family: Open Sans;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.6875rem; /* 133.333% */
+    padding-top:1rem;
+    padding-bottom:2rem;
+
+}
+.clientSelectionClass .changePro{
+    color: var(--primary-600, #007394);
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline!important;
+}
+
+
+.searchHeaderComponent .welcomeText{
+    color: var(--neutral-900-black, #000);
+    font-family: Open Sans;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.5rem;
+    text-align: center;
+    padding-top:2.5rem;
+    }
+
+.searchHeaderComponent .welcomeInfo{
+    color: #000;
+    font-family: Open Sans;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem;
+    padding-top:0.5rem;
+     text-align: center;
+}
+.searchHeaderComponent .rightBg{
+        right: 0;
+    position: absolute;
+    top: 103%;
+    text-align: right;
+    z-index: -1;
+}
+.searchHeaderComponent .rightBg img{
+    width: 50%;
+}
+.mob_alignpm{
+    padding-top:16px;
+    margin-left:-66px;
+    pointer-events : none;
+
+}
+.mobTextCenter{
+    text-align: center;
+}
+.pt40{
+    padding-top:2rem;
+}
+.pt50{
+    padding-top:50px;
+}
+.pt60{
+    padding-top:60px;
+}
+
+.searchHeaderComponent .searchBox{
+      padding: 0 1rem; 
+}
+
+ .bgcolor::after {
+  /*  content: "";
+    position: absolute;
+    height: 2rem;
+    left: -10%;
+    right: -10%;
+    border-radius: 70%;
+    bottom: -20px;
+    background: #fff;*/
+}
+.curveImg{
+    max-width: 100%;
+}
+.curveImage{
+    margin-top:-14px;
+    padding-bottom:1.5rem;
+}
+ .logo_container{
+    width: 12.2rem;
+    height: 3.88rem;
+    overflow: hidden;   
+}
+.logopadding{
+    padding-bottom:1rem;
+}
+
+.radioTooltip{
+    display: none !important;
+    position: absolute;
+    top: 8px;
+    background-color: #fff;
+    padding: 4px;
+    color: #000;
+}
+.searchRadio:focus+.radioTooltip{
+    display: block !important;
+}
+.searchHeaderComponent .searchBar {
+    width: 90% !important;
+}
+.searchHeaderComponent .largeAlignCenter{
+        text-align: left;
+    }
+.searchHeaderComponent .largeDeviceAlign{
+        text-align: center;
+    }
+.searchHeaderComponent .LargeDeviceMargin{
+        margin-left: 0rem;
+        position: relative;
+    }
+
+.changePro:hover, .changePro:focus , .changePro:active{
+    text-decoration: underline!important;
+}
+a.changePro:focus, a.changePro:focus-visible{
+    text-decoration: underline!important;
+}
+/***********************/
+
+@media  screen and (min-width: 480px) {
+  .searchHeaderComponent .searchBar {
+    width: 60% !important;
+    }
+}
+
+@media  screen and (min-width: 768px) {
+     .bgcolor {
+        min-height:  22.375rem;;
+         padding-left: 2rem;
+        padding-right: 2rem;
+      }
+      .curveImage{
+        margin-top:-10px;
+    }
+    .searchHeaderComponent .searchBox{
+      padding: 0rem 2rem; 
+    }
+     .searchHeaderComponent .welcomeText{
+        font-size:2.5rem;
+        line-height: 3.375rem;
+        padding-top:3.38rem;
+    }
+    .searchHeaderComponent .welcomeInfo{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding-top:0.75rem;
+    }
+   .searchHeaderComponent .largeAlignCenter{
+        text-align: center;
+    }
+    .mob_alignpm{
+    padding-top:0px;
+    margin-left:0px;
+    pointer-events : none;
+
+    }
+    .mobTextCenter{
+    text-align: left;
+    }
+    .searchHeaderComponent .searchBar {
+    width: 83% !important;
+    }
+      .searchHeaderComponent .largeDeviceAlign{
+        text-align: right;
+        padding-right:1.5rem!important;
+    }
+    .searchHeaderComponent .rightBg img{
+    width: 100%;
+    }
+
+    /*Client selection */
+ .clientClass{
+        
+    width: 19.375rem;
+    height: 22.1165rem;
+    opacity: 0.8;
+    }
+    .clientSelectionClassSearch {
+          padding-left: 2rem !important;
+        padding-right: 2rem !important;
+        width:90%;
+    
+    }
+    .clientSelectionClass .header4{
+        padding-top:1rem;
+        padding-bottom:1.5rem;
+         font-size: 1.5rem;
+        line-height: 2rem; /* 133.333% */
+    }
+    .clientSelectionClass{
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+        max-width : 75rem;
+        padding-top:3.94rem;
+        margin: 0 auto;
+    }
+    .clientSelectionClassWrapper{
+    max-width: 75rem;
+    margin: 0 auto;
+    }
+      .clientSelectionClass .changePro{
+        font-size: 1rem;
+    }
+    .pt40{
+        padding-top:2.5rem;
+    }
+}
+
+@media  screen and (min-width: 1024px) {
+      .bgcolor {
+        min-height: 22.375rem;;
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+           .curveImage{
+        margin-top:-5px;
+    }
+    .searchHeaderComponent .searchBox{
+      padding: 0rem 0rem;
+    }
+    .searchHeaderComponent .welcomeText{
+        font-size:2.5rem;
+        line-height: 3.375rem;
+        padding-top:3.38rem;
+    }
+    .searchHeaderComponent .welcomeInfo{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding-top:0.75rem;
+    }
+    .searchHeaderComponent .largeAlignCenter{
+        text-align: center;
+    }
+    .mob_alignpm{
+        padding-top:0px;
+        margin-left:-1rem;
+        pointer-events : none;
+    }    
+    .mobTextCenter{
+         text-align: left;
+    }
+    .searchHeaderComponent .searchBar {
+        width: 60% !important;
+    }
+    .searchHeaderComponent .largeDeviceAlign{
+        text-align: right;
+        padding-right:1.5rem!important;
+    }    
+    .searchHeaderComponent .rightBg img{
+    width: 100%;
+    }
+    .searchHeaderComponent .LargeDeviceMargin{
+        margin-left: 4rem;
+    }    
+
+        /*Client selection */
+    .clientClass{
+       width: 19.375rem;
+        height: 22.1165rem;
+         opacity: 0.8;
+    }
+    .clientSelectionClassSearch {
+         width:65%;
+        padding-left: 0rem !important;
+        padding-right: 0rem !important;
+    
+    }
+    .clientSelectionClass .header4{
+        padding-top:1rem;
+        padding-bottom:1.5rem;
+         font-size: 1.5rem;
+        line-height: 2rem; /* 133.333% */
+    }
+     .clientSelectionClass{
+        padding-left: 0rem !important;
+        padding-right: 0rem !important;
+        width : 51.625rem;
+        max-width: 75rem;
+        padding-top:3.94rem;
+        margin: 0 auto;
+    }
+    .clientSelectionClassWrapper{
+        max-width: 75rem;
+        margin: 0 auto;
+        padding-left: 0rem !important;
+    }
+    .clientSelectionClass .changePro{
+        font-size: 1rem;
+    }
+    .pt40{
+        padding-top:2.5rem;
+    }
+}

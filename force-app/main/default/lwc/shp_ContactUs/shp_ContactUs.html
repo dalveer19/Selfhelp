@@ -1,0 +1,32 @@
+<template>
+	<template if:false={display}>
+		<div class="needhelpWrapper">
+			<div class="slds-grid slds-wrap slds-grid_vertical-align-center needMoreHelpSection">
+				<div
+					class="slds-col slds-small-size_1-of-1 slds-medium-size_3-of-12 slds-large-size_4-of-12 slds-align_absolute-center">
+
+					<div class="slds-col text-center text_center_Mob"><img src={svgImage} class="imgneed" alt={label_Contact_us} />
+						<h4 class="needMore slds-hide_medium slds-hide_large" aria-level="2">{label_Contact_us}</h4>
+					</div>
+					<div class="slds-col  slds-show_medium">
+						<h4 class="needMore" aria-level="2">{label_Contact_us}</h4>
+					</div>
+
+				</div>
+				<div class="slds-col slds-medium-size_9-of-12 slds-large-size_8-of-12 infoSec">
+					<div class="slds-grid slds-wrap">
+						<div class="slds-col   slds-medium-size_8-of-8 slds-large-size_5-of-8 mob_pt">
+							<p class="needMoreInfo mobdisplay fw700">
+                                <strong>{label_Still_have_questions} </strong></p>
+							<p class="needMoreInfo mobdisplay tab_ptb "> {label_If_you_don_t_find_what_you_re_looking_for}</p>
+
+						</div>
+						<div
+							class="slds-col  slds-medium-size_8-of-8 slds-large-size_3-of-8 slds-align_absolute-center tab_justify_left pl1_5">
+							<button class="slds-button slds-button_outline-brand testProgramBtn" onclick={viewContactInformation}>{label_View_contact_information}</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</template>

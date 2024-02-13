@@ -1,0 +1,72 @@
+<template>
+	<template if:true={display}>
+	<div class="needhelpWrapper">	
+	<div class="slds-grid slds-wrap slds-grid_vertical-align-center needMoreHelpSection">
+			<div class="slds-col slds-small-size_1-of-1 slds-medium-size_3-of-12 slds-large-size_4-of-12 slds-align_absolute-center slds-grid_align-center">
+				
+				<div class="slds-col text-center"><img src={svgImage} class="imgneed" alt={label_Need_More_Help} /> <h4 class="needMore slds-hide_medium slds-hide_large">{label_Need_More_Help}</h4></div>
+				<div class="slds-col  slds-show_medium"><h4 class="needMore" aria-level="2">{label_Need_More_Help}</h4></div>
+				
+			</div>
+			<div class="slds-col slds-medium-size_9-of-12 slds-large-size_8-of-12 infoSec">
+				<div class="slds-grid slds-wrap">
+					<div class="slds-col   slds-medium-size_8-of-8 slds-large-size_5-of-8 mob_pt">
+						<p class="needMoreInfo mobdisplay fw700">{label_Let_s_get_you_answers}</p>
+						<p class="needMoreInfo mobdisplay tab_ptb "> {label_We_recommend_selecting_your_testing_program_first}  </p>
+				
+					</div>
+					<div class="slds-col  slds-medium-size_8-of-8 slds-large-size_3-of-8 slds-align_absolute-center tab_justify_left pl1_5">
+						<button class="slds-button slds-button_outline-brand testProgramBtn" onclick={selectTestingProgram}>{label_Select_testing_program}</button>
+					</div>
+			</div>
+			</div>
+		</div>
+		</div>
+
+		<!-- MODAL POPUP -->
+		<template if:true={showModal}>
+			<c-modal-popup onclosemodal={closeModal} client-name-from-container={clientName} search-word={keyword}
+				ondeselectclient={handleClientDeselected} onsendclient={handleClientSelected}
+				onresetprogram={resetProgram} onremoveclient={handleRemoveClient}
+				current-page-reference-state={currentPageReferenceState} client-present={isClientThere}>
+			</c-modal-popup>
+		</template>
+		<!-- MODAL POPUP -->
+	</template>
+
+	<!-- <template if:false={display}>
+		<div class="needhelpWrapper">	
+	<div class="slds-grid slds-wrap slds-grid_vertical-align-center needMoreHelpSection">
+			<div class="slds-col slds-small-size_1-of-1 slds-medium-size_3-of-12 slds-large-size_4-of-12 slds-align_absolute-center slds-grid_align-center">
+				
+				<div class="slds-col text-center"><img src={svgImage} class="imgneed" alt={label_Need_More_Help} /> <h4 class="needMore slds-hide_medium slds-hide_large">{label_Need_More_Help}</h4></div>
+				<div class="slds-col  slds-show_medium"><h4 class="needMore">{label_Need_More_Help}</h4></div>
+				
+			</div>
+			<div class="slds-col slds-medium-size_9-of-12 slds-large-size_8-of-12 infoSec">
+				<div class="slds-grid slds-wrap">
+					<div class="slds-col   slds-medium-size_8-of-8 slds-large-size_8-of-8 mob_pt">
+						<p class="needMoreInfo1 fw700">{label_You_can_reach_out_directly_to_your_testing_program}</p>
+						<p class="needMoreInfo1 tab_ptb1 "> {label_If_you_don_t_find_what_you_re_looking_for}  </p>
+						<p> <a href="#" class="emailStyle">{label_emailclientnamecom}</a> <span class="phnumber"> <span class="vLine">|</span>{label_phonenumber}</span> </p>
+					</div>
+			
+			</div>
+			</div>
+		</div>
+		</div> -->
+		<!--div class="slds-grid slds-grid_vertical-align-center slds-p-horizontal_xx-large slds-p-top_xx-large ">
+			<div class="slds-col slds-align_absolute-center slds-text-heading_medium">
+			<img src={svgImage}  />
+				<span>{label_Need_More_Help}</span>
+			</div>
+			<div class="slds-col slds-align_left slds-text-body_medium">
+				<span>
+				<p><strong> {label_You_can_reach_out_directly_to_your_testing_program} </strong></p>
+                <p>{label_If_you_don_t_find_what_you_re_looking_for}</p>
+				<p> <a>{label_emailclientnamecom}</a> &nbsp;&nbsp; {label_phonenumber} </p>
+            </span>
+			</div>
+		</div-->
+	<!-- </template> -->
+</template>

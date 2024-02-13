@@ -1,0 +1,118 @@
+{
+  "appPageId" : "998c2199-5d1b-4626-a2a2-2cbf96344ad3",
+  "componentName" : "c:LandingPageTemplate",
+  "dataProviders" : [ ],
+  "id" : "07edd54e-629a-4e04-b094-2dcc186ce985",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:header_SH",
+      "id" : "b8daf796-5ebd-4a36-954e-bb90f82559af",
+      "renderPriority" : "HIGHEST",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "30228c03-f232-40b2-8a45-8090005d1896",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:knowledgeArticleSearchContainer",
+      "id" : "afe02305-ee8b-4442-a7b6-e42496e82e16",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "c:footer_SH",
+      "id" : "bf35d0e3-e164-49cc-9787-40492b3bbe7f",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f7308689-2b55-4688-9630-28b5ffab3e2d",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:footer_SH",
+      "id" : "ef49e053-279d-4e54-bc3f-70d9a2f8418b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<li class=\"footerSubLinks\" data-id=\"cookiePrefs\">\n<a style=\"cursor:pointer;\" class=\"optanon-toggle-display\" id=\"gtag\">Cookies preferences</a></li>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "2af4ee97-d890-4bf0-a53d-47a9a8d98f3b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "17381910-e079-4c0f-86bb-7dce7efd7f21",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Help and Support Landing Page"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "1b920342-6964-4eee-a728-c4079cb65e45",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3895baf2-3a0c-4948-ba29-3e44b94dc846",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:gTagManager",
+      "id" : "f013c3c6-a252-4009-97ae-e87252f5ef16",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "c:knowledgeArticleSearchContainer",
+      "id" : "cf53ab9a-08d2-4e62-9fdf-8737771ca69a",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "c:featuredArticlesDisplay",
+      "id" : "c4d938c2-f153-489e-ab92-b88c96f569f4",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "c:dataCategory",
+      "id" : "e2cc0a46-c0b3-496a-9025-2573cad931bb",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "c:shp_ContactUs",
+      "id" : "30b92417-ac0d-4de6-922e-6fac48aa2a23",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d32449af-2f84-429e-8950-8d2782f0c296",
+    "regionName" : "main",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}

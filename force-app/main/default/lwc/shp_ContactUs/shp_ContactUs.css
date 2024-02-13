@@ -1,0 +1,219 @@
+.dummy{
+	color : blue;
+}
+
+.needMoreHelpSection{
+	
+	max-width: 75rem;
+	margin: 0 auto;
+}
+.needhelpWrapper{
+	padding:2.5rem 1.5rem;
+	border-top:none;
+		background: var(--Neutral-50-White, #FFF);
+}
+
+.needMoreHelpSection .needMore {
+	font-size: 1.5rem;
+	line-height: 2rem; /* 133.333% */
+}
+.needMoreHelpSection .infoSec{
+	padding-left:1rem;
+}
+.needMoreHelpSection .needMore {
+color: var(--neutral-900-black, #000);
+text-align: center;
+font-family: Open Sans;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 600;
+line-height: 1.6875rem; /* 135% */
+}
+
+.imgneed{
+	width: 7.0625rem;
+	height: 6.5625rem;
+	padding-bottom:0.5rem;
+}
+.text_center_Mob{
+	text-align: center;
+	padding-bottom: 0.5rem;
+}
+
+.mobdisplay{
+	display: inline;
+}
+.needMoreHelpSection .needMoreInfo{
+	color: var(--neutral-800, #333);
+	font-family: Open Sans;
+	font-size: 0.875rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-align: center;
+}
+.needMoreHelpSection .needMoreInfo1{
+	color: var(--neutral-700, #666);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+
+	/* Body/Body2--14 Bold */
+	font-family: Open Sans;
+	font-size: 0.875rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.25rem; /* 142.857% */
+}
+.needMoreHelpSection .fw700 {
+	color: #333!important;
+	font-weight: 700!important;
+}
+.mob_pt{
+	padding: 1.5rem 0;
+}
+
+.needMoreHelpSection .testProgramBtn{
+	border-radius: 0.375rem;
+	border: 2px solid var(--primary-600, #007394);
+	background: #FFF;
+	color: var(--primary-600, #007394);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Open Sans;
+	font-size: 0.875rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1.5rem; /* 171.429% */
+	padding: 0.5rem 1rem;
+	width: 100%;
+}
+.needMoreHelpSection .testProgramBtn:hover{
+	background: var(--Primary-50, #E4FAFF);
+}
+.needMoreHelpSection .testProgramBtn:focus{
+	box-shadow: 0px 0px 2px 3px #219EA3;
+}
+.needMoreHelpSection .testProgramBtn:active{
+	background: var(--Primary-200, #87C5E1);
+}
+
+.pl1_5{
+	padding-left:0px;
+}
+
+@media  screen and (min-width: 768px) {
+
+	.needMoreHelpSection .needMore {
+		font-size: 1.5rem;
+		line-height: 2rem; /* 133.333% */
+	}
+	.needMoreHelpSection .needMoreInfo{
+		color: var(--neutral-700, #666);
+		font-family: Open Sans;
+		font-size: 1rem;
+		text-align: left;
+		
+	}
+	.imgneed{
+		width: 7.0625rem;
+		height: 6.5625rem;
+		padding: 0.1875rem 0.25rem;
+	}
+	.text_center_Mob{
+	text-align: left;
+	padding-bottom: 0rem;
+}
+	.mobdisplay{
+		display: block;
+	}
+	.needhelpWrapper{
+		padding:3rem 4rem;
+		background: var(--Neutral-50-White, #FFF);
+		}
+	.needMoreHelpSection .needMoreInfo1{
+	color: var(--neutral-700, #666);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Open Sans;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.375rem; /* 137.5% */
+		text-align: left;
+	}
+	.mob_pt{
+		padding: 0;
+	}
+	.tab_ptb{
+				padding-top:0.5rem;
+		padding-bottom:1rem;
+	}
+	.tab_justify_left{
+		justify-content: left!important;
+	}
+	.pl1_5{
+		padding-left:0rem;
+	}
+	.needMoreHelpSection .testProgramBtn{
+		width:auto;
+	}
+}
+
+@media  screen and (min-width: 1024px) {
+
+	.needMoreHelpSection .needMore {
+		font-size: 1.5rem;
+		line-height: 2rem; /* 133.333% */
+		padding-left:1.5rem;
+		text-align: left;
+		min-width: 16rem;
+	}
+	.needMoreHelpSection .needMoreInfo{
+		color: var(--neutral-700, #666);
+		font-family: Open Sans;
+		font-size: 1rem;
+		text-align: left;
+		padding-right:0.5rem;
+	}
+	.imgneed{
+		width: 7.0625rem;
+		height: 6.5625rem;
+		padding: 0.1875rem 0.25rem;
+	}
+	.text_center_Mob{
+	text-align: left;
+	padding-bottom: 0rem;
+}
+	.mobdisplay{
+		display: block;
+	}
+	.needMoreHelpSection .needMoreInfo1{
+		color: var(--neutral-700, #666);
+		font-feature-settings: 'clig' off, 'liga' off;
+		font-family: Open Sans;
+		font-size: 1rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 1.375rem; /* 137.5% */
+		text-align: left;
+		
+	}
+		.tab_ptb{
+				padding-top:0.5rem;
+		padding-bottom:0rem;
+	}
+	.pl1_5{
+		padding-left:1.5rem;
+	}
+	.needhelpWrapper{
+		padding:3rem 4rem;
+		background: var(--Neutral-50-White, #FFF);
+	}
+	.needMoreHelpSection .testProgramBtn{
+		width:auto;
+	}
+	.tab_ptb1{
+		padding-top:0.5rem;
+		padding-bottom:0.5rem;
+	}
+
+}

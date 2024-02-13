@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Article_type__c</fullName>
+    <externalId>false</externalId>
+    <label>Article type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Documentation</fullName>
+                <default>false</default>
+                <label>Documentation</label>
+            </value>
+            <value>
+                <fullName>FAQ</fullName>
+                <default>false</default>
+                <label>FAQ</label>
+            </value>
+            <value>
+                <fullName>How To</fullName>
+                <default>false</default>
+                <label>How To</label>
+            </value>
+            <value>
+                <fullName>Informational</fullName>
+                <default>false</default>
+                <label>Informational</label>
+            </value>
+            <value>
+                <fullName>Media Presentation</fullName>
+                <default>false</default>
+                <label>Media Presentation</label>
+            </value>
+            <value>
+                <fullName>Troubleshooting</fullName>
+                <default>false</default>
+                <label>Troubleshooting</label>
+            </value>
+            <value>
+                <fullName>Helpful tips and Processes</fullName>
+                <default>false</default>
+                <label>Helpful tips and Processes</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,116 @@
+<template>
+	<template if:true={isResultsLoading}>
+		<div class="slds-is-relative slds-align_absolute-center slds-var-p-around_large" tabindex="0" aria-label="Loading" aria-live="assertive">
+			<div class="lds-ring">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<!-- <lightning-spinner alternative-text="Loading..." variant="brand"></lightning-spinner> -->
+		</div>
+	</template>
+	<template if:false={isResultsLoading}>
+		<!-- Add error message -->
+		<div if:true={hasError}>
+			<div class="slds-grid slds-gutters slds-wrap noResultFoundContainer">
+				<div class="slds-col slds-small-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1">
+					<h4 class="noResultsHeader searchResultHeader" aria-level="2" role="alert">
+						<i class="fa-solid fa-bell-exclamation bellIcon" c-modalpopup_modalpopup=""></i>
+						{label_We_re_sorry_but_we_couldn_t_find} "{keyword}"</h4>
+					<p class="noResultslisttitle">{label_Here_are_a_few_things_you_can_try}</p>
+					<ul class="slds-list_dotted">
+						<li class="noResultsListItem">{label_Review_the_Spelling_of_your_search_terms}</li>
+						<li class="noResultsListItem">{label_Try_using_fewer_different_or_more_general_keywords} </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div if:true={hasCategoryError}>
+			<div class="slds-grid slds-gutters slds-wrap noResultFoundContainer">
+				<div class="slds-col slds-small-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1">
+					<h4 class="noResultsHeader searchResultHeader" aria-level="2" role="alert">
+						<i class="fa-solid fa-bell-exclamation bellIcon" c-modalpopup_modalpopup=""></i>
+						{label_Couldnt_Find_Any_Results_For_Category} {categoryLabel}
+						<span if:true={isClientThere}> {label_and} {clientName}.</span>
+						<span if:false={isClientThere}>.</span>
+					</h4>
+				</div>
+			</div>
+		</div>
+
+		<template if:false={hasAnyError}>
+			<template if:true={articlesResultLength}>
+
+				<template if:false={isCategorySearch}>
+					<div class="knowledgeSearchInfo" aria-live="assertive">
+						<div class="text-center">
+							<h2 class="searchResultHeader" aria-live="assertive" role="alert">{label_Hereswhatwefound}<span class="slds-assistive-text">{label_showing} {articlesToDisplayLength} {label_of} {articlesResultLength}{label_resultsfor}{keyword}</span></h2>
+							<p class="searchInfo text-right mobc">
+								{label_showing} {articlesToDisplayLength} {label_of} {articlesResultLength}
+								{label_resultsfor}
+								<span class="fw700"> "{keyword}"</span>
+							</p>
+						</div>
+					</div>
+				</template>
+
+				<template if:true={isCategorySearch}>
+					<template if:true={isCategorySearchResults}>
+						<!-- Results found Header -->
+						<div class="knowledgeCatSearchInfo">
+							<div class="text-center">
+								<p class="searchInfo text-right mobc" role="alert">
+									{label_showing} {articlesToDisplayLength} {label_of} {articlesResultLength}
+									{label_resultsfor}
+									<span class="fw700"> "{keyword}"</span>
+								</p>
+							</div>
+						</div>
+					</template>
+				</template>
+				<div class="knowledgeSearchResultsCmpMain">
+				<div class="knowledgeSearchResultsCmp">
+					<!-- Results found Body -->
+					<div class="articleContainer">
+						<hr class="hrLine">
+						<div for:each={articlesToDisplay} for:item="article" key={article.key}>
+							<div class="categoryWrapper">
+								<div class="slds-grid slds-gutters slds-wrap">
+									<div
+										class="slds-col slds-small-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1 categoryWrapperPadding">
+										<!-- Client and Category Names -->
+										<div>
+											<p class="clientAndCategoryName">
+												{article.value.clientName}
+												<!-- . {article.value.dataCategoriesListString} -->
+											</p>
+										</div>
+										<!-- Result Knowledge List -->
+										<p><i class="fa-regular fa-memo-pad memoPadIcon"></i>
+											<a href={article.value.url} tabindex="0" onclick={handleRecordClick} onkeypress={handleRecordKeyPress} class='articleTitle' name={article.value.searchResult.Id}>
+												{article.value.searchResult.Title}
+											</a>
+										</p>
+										<p class='articleSummary custom-truncate'>
+											{article.value.searchResult.Summary}
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- View more  -->
+						<div class="viewMoreContainer">
+							<p class="text-center">
+								<a tabindex="0" class="viewmore-click" if:true={showViewMoreOption} onkeydown={handleViewMoreKeyPress} onclick={handleViewMore}>
+									{label_viewmore}
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				</div>
+			</template>
+		</template>
+	</template>
+</template>

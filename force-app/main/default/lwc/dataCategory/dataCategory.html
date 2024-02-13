@@ -1,0 +1,43 @@
+<template>
+	<div class="slds-grid slds-grid_align-center slds-wrap ">
+		<div class=" featureDisplayComponent">
+			<div class="slds-col  slds-small-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1">
+				<div class="headingContainer">
+					<h4 class="featureHeading" aria-level="2">{label_SearchbyCategory}</h4>
+				</div>
+				<div class="slds-grid slds-wrap"
+					if:true={categoriesList}>
+					<template for:each={categoriesList} for:item="category" key={category.Id}>
+						<div key={category}
+						class="slds-col slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_1-of-3 slds-large-size_1-of-3">
+						<a class="slds-box customBox slds-align_absolute-center slds-text-title_bold" tabindex="0"
+								onclick={handleCategoryClick} name={category.name} onkeydown={handleKeyPress}>
+						<div class="center">
+							<div class="slds-col text-center logoWrap"><img src={category.svgImage} alt="category" /></div>
+							<p class="catName">{category.label}</p>
+						</div></a> 
+						</div>
+					</template>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!--<div class="slds-box slds-theme_default"> 
+    <h1 class="slds-align_absolute-center slds-text-heading_large slds-p-bottom_medium" >{labelBrowseTopCategories}</h1> 
+    <lightning-layout multiple-rows class="slds-align_absolute-center container" >
+            <template for:each={categoriesList} for:item="category">
+                <lightning-layout-item size="12" large-device-size="4" medium-device-size="6" small-device-size="12"
+                 key={category.id} class="slds-align_absolute-center slds-p-top_small slds-p-bottom_small layout-item" vertical-align="center">
+                    
+                    <div class="slds-box " style="height:100px; width: 200px; align-items: center; ">         
+                        <lightning-icon icon-name="standard:account" alternative-text="Account" title="Account" class="slds-align_absolute-center slds-icon slds-icon_small" ></lightning-icon>                       
+                    <a onclick={handleViewAll} class="slds-align_absolute-center slds-p-right_small slds-p-left_small slds-text-title_bold" style="padding:20px">{category} </a>
+                    </div>                    
+                </lightning-layout-item>
+            </template>
+        </lightning-layout> -->
+</template>

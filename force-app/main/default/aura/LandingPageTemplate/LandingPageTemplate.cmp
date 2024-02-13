@@ -1,0 +1,24 @@
+<aura:component implements="forceCommunity:layout" access="global" description="Sample Custom Theme Layout">
+     <aura:attribute name="main" type="Aura.Component[]" description="Main region" />
+    <aura:attribute name="header" type="Aura.Component[]" description="Header region" />
+    <aura:attribute name="footer" type="Aura.Component[]" description="Footer region" />
+  <div class="selfHelpLayout">
+        <lightning:layout>
+            <lightning:layoutItem size="12" class="headerContent">
+                {!v.header}
+            </lightning:layoutItem>
+      </lightning:layout>
+      <lightning:layout>
+            <lightning:layoutItem  size="12" class="mainContent">
+                <div role="main" >
+                {!v.main}
+                </div>
+            </lightning:layoutItem>
+            </lightning:layout>
+      <lightning:layout>
+            <lightning:layoutItem size="12">
+                {!v.footer}
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div>
+</aura:component>

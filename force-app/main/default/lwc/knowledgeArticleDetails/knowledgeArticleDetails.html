@@ -1,0 +1,138 @@
+<template>
+	<template lwc:if={isLoading}>
+		<div class="spinnerBox slds-var-m-around_small" style="height:90%;">
+			<div class="slds-is-relative slds-align_absolute-center slds-var-p-around_xx-large">
+				<div class="lds-ring">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</div>
+	</template>
+	<template lwc:else>
+		<!-- Header -->
+		<div class="KnHeader">
+			<c-page-navigation-parent></c-page-navigation-parent>
+			<div class="ArticleWrapper">
+				<img src={ArticleDetailBackground} class="ArticleDetailClass" alt=""/>
+				<c-article-detail-page-header-cmpt></c-article-detail-page-header-cmpt>
+				<div class="articleNameContainer" if:true={showArticleDetails}>
+					<p class="clientName">{clientName}</p>
+					<h3 class="articleTitle" aria-level="2">{resultdata.Title}</h3>
+				</div>
+			</div>
+		</div>
+		<!-- Body -->
+		<template lwc:if={invalidLangError}>
+			<div class="invalidLangDiv">
+			<lightning-layout multiple-rows class="">
+				<lightning-layout-item size="12">
+					<h4 class="invalidLangTitle">
+						<i class="fa-solid fa-bell-exclamation bellIcon"></i>
+						{label_The_article_has_not_been_published_in_this_language}
+					</h4>
+				</lightning-layout-item>
+				<lightning-layout-item size="12" small-device-size="12" medium-device-size="12" large-device-size="12">
+					<p class="invalidLangSubtitle">
+						<span>{label_Please_select_an} </span>
+						<span><a href=""  onclick={openLanguageModal} class="linkAltLang"> {label_alternative_language} </a></span>
+						<!--span>
+							<lightning-button class="linkAltLang" variant="base" label={label_alternative_language} onclick={openLanguageModal}>
+							</lightning-button>&nbsp;
+						</span-->
+						<span>{label_from_the_following_options}</span>
+					</p>
+				</lightning-layout-item>
+				<lightning-layout-item>
+					<div class="invalidLangList">
+						<ul class="leftGap">
+							<li class="langList" for:each={validLangsToShow} for:item="lang" key={lang}>
+								{lang}
+							</li>
+						</ul>
+					</div>
+				</lightning-layout-item>
+			</lightning-layout>	
+			</div>		
+		</template>
+		<template lwc:elseif={showArticleDetails}>
+			<div class="articleDetailSectionWrapper">
+				<div class="articleDetailSection">
+					
+					<!-- Last Published Date Section -->
+					<lightning-layout>
+						<div if:true={resultdata.LastPublishedDate}>
+							<lightning-layout-item size="12">
+								<div class="slds-text-heading_xx_small  articleDate">
+									{label_Date} {publishedDate}
+								</div>
+							</lightning-layout-item>
+						</div>
+					</lightning-layout>
+
+					<!-- Article Content Section -->
+					<div class='slds-grid'>
+						<lightning-layout class=" slds-size_12-of-12">
+							<lightning-layout-item size="12">
+								<div class="slds-box">
+
+									<!-- Visible to public = True -->
+									<template if:false={resultdata.isVisibleToPublic}>
+										<lightning-layout if:true={resultdata.Candidatesection}>
+											<lightning-layout-item size="12" flexibility="auto">
+												<div class="slds-text-heading_small "></div>
+												<lightning-formatted-rich-text value={resultdata.Candidatesection} style="margin-bottom: 20px;"></lightning-formatted-rich-text>
+											</lightning-layout-item>
+										</lightning-layout>
+									</template>
+
+									<!-- Visible to public = false -->
+									<template if:true={resultdata.isVisibleToPublic}>
+										<div class="slds-grid">
+											<lightning-formatted-rich-text value={resultdata.articleText}></lightning-formatted-rich-text>
+											<a>Log in to continue... </a>
+											<div class="slds-text-align_right slds-p-top_medium">
+												<!-- Display login button -->
+												<lightning-button label="Login" onclick={handleLogin} variant="brand">
+												</lightning-button>
+											</div>
+										</div>
+									</template>
+
+									<!-- Tags -->
+									<template if:true={havingTags}>
+										<div class="slds-grid catContainer">
+											<div class="slds-large-size_1-of-1">
+												<!-- Display tags associated with the article -->
+												<div class="slds-grid">
+													<div class="slds-col" style="flex:none;">
+														<h6 class="tags" aria-level="3">{label_Tags}</h6>
+													</div>
+													<div class="slds-col">
+														<!-- Iterate through tags and display as pills -->
+														<template for:each={tags} for:item="tag">
+															<p key={tag} class="slds-pill slds-small-size_1-0f-2"> {tag}
+															</p>
+														</template>
+													</div>
+												</div>
+											</div>
+										</div>
+									</template>
+									
+								</div>
+							</lightning-layout-item>
+						</lightning-layout>
+					</div>
+
+				</div>
+			</div>
+		</template>
+	</template>
+
+	<template if:true={showLangModal}>
+        <c-shp_language-selector  oncloselanguage={handleCloseLang}></c-shp_language-selector>
+    </template>
+</template>

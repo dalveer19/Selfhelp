@@ -1,0 +1,62 @@
+<template>
+
+	<section role="dialog" tabindex="0" aria-modal="true" aria-label={labels.Language}
+		class="slds-modal slds-fade-in-open slds-modal_small modalBox languageModal " onkeyup={keyboardHandler} onfocusout={handleFocusOut} data-index="0">
+		<div class="slds-modal__container shadowBox" data-id="exampleModal" tabindex="-1">
+			<div if:false={languagesLoading} class="">
+				<div class="slds-modal__header" onclick={ignore}>
+					<img class="img" src={img} />
+					<h3 id="modal-heading-01" class="header3">{labels.Language}</h3>
+					<p id="modal-heading-02" class="prefLanguage">
+						{labels.Your_preferred_Language}</p>
+					<p id="modal-heading-03" class="selectLang">
+						{selectedLanguageBold} <span class="selectState">{selectedLanguage}</span></p>
+					<button class="slds-button slds-button_icon slds-modal__close closeButton" onclick={handleClose} >
+							<i class="fa-solid fa-close closebtn"></i>
+							<span class="slds-assistive-text">{label_close}</span>
+					</button>
+				</div>
+				<div class="slds-modal__content slds-p-around_medium languageOption" id="modal-content-id-1" onclick={ignore}>
+					<p id="modal-heading-04" class="otherLanguage">
+						{labels.Other_available_Languages}</p>
+					<div class="slds-grid slds-wrap ml75" role="group" aria-labelledby="modal-heading-04">
+						<template for:each={langArray} for:item="lang">
+							<div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-large-size_6-of-12 pb_1rem"
+								key={lang.code}>
+								<div class="slds-box langBox" data-id={lang.code} style="cursor:pointer;"
+									onclick={handleClick} onkeypress={handleLangClickKey} tabindex="0" role="button" aria-live="polite">
+									<p data-id={lang.code} class="langTitle">{lang.display}</p>
+									<p data-id={lang.code} class="langSumm">{lang.label}</p>
+								</div>
+							</div>
+						</template>
+						<div class="foo_mob showMobile" onclick={ignore}>
+					
+					<button class="slds-button slds-button_brand buttonCustom w100" onclick={handleSave}>{labels.Apply}</button>
+					<button class="slds-button cancelButton btnBoxModal w100" aria-label={labels.Cancel} onclick={handleClose}>{labels.Cancel}</button>
+				</div>
+					</div>
+				</div>
+				<div class="slds-modal__footer showDesktop" onclick={ignore}>
+					<button class="slds-button cancelButton" aria-label={labels.Cancel} onclick={handleClose}>{labels.Cancel}</button>
+					<button class="slds-button slds-button_brand buttonCustom" onclick={handleSave}>{labels.Apply}</button>
+				</div>
+				
+			</div>
+			<div if:true={languagesLoading}>
+				<lightning-modal-body>
+					<div class="slds-is-relative slds-align_absolute-center slds-var-p-around_xx-large">
+						<div class="lds-ring">
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+					</div>
+				</lightning-modal-body>
+			</div>
+		</div>
+	</section>
+
+	<div class="slds-backdrop slds-backdrop_open" role="presentation" data-index="1" tabindex="0"></div>
+</template>

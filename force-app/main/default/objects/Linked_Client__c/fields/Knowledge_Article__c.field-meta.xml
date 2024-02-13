@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Knowledge_Article__c</fullName>
+    <description>This lookup field is for the linked knowledge article where Knowledge Article and Linked Client have a Master-Detail relationship.</description>
+    <externalId>false</externalId>
+    <label>Knowledge Article</label>
+    <referenceTo>Knowledge__kav</referenceTo>
+    <relationshipLabel>Linked Clients</relationshipLabel>
+    <relationshipName>Linked_Clients</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

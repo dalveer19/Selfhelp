@@ -1,0 +1,18 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction"
+  access="global" controller="knowledgeDeleteAction">
+  <aura:attribute name="recordId" type="Id" />
+  <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+  <lightning:workspaceAPI aura:id="workspace" />
+
+  <aura:html tag="style">
+
+    .slds-backdrop {
+    background: rgba(43, 40, 38, 0) !important;
+    }
+    .slds-fade-in-open {
+    display:none ;
+    }
+
+  </aura:html>
+
+</aura:component>

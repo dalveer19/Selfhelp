@@ -1,0 +1,80 @@
+<template>
+    <div class="articleDetailPage">
+        <div>            
+            <template if:true={clientThereinHeader}>
+                    <div class="searchContainer">
+                         <div class="slds-text-align_right slds-grid slds-grid_align-end">
+                         <div class="slds-col slds-align-end">
+                             <div class="searchIconWrapper" tabindex="0" onclick={openArticleModal} aria-label={searchProgramIconLabel}  onkeydown={handleSearchKeyDown} role="button">
+                             <span class="slds-assistive-text">{searchProgramIconLabel}</span>
+                             <i class="fa-solid fa-magnifying-glass searchIcon"></i>
+                             </div>
+                        </div>
+                        </div>
+                    </div>
+                <lightning-layout-item flexibility="auto" style="display:none;">
+                    <div class="slds-text-align_right slds-grid slds-grid_align-end">
+                        <div class="slds-align-end">
+                            <div class="circular-button"
+                                style="background-color: blue; mix-blend-mode: luminosity;&quot;&quot;;">
+                                <lightning-button-icon icon-name="utility:search" style="color:white;"
+                                    alternative-text="Search" onclick={openArticleModal} variant="bare"
+                                    class="slds-button"></lightning-button-icon>
+                            </div>
+                        </div>
+                    </div>
+                </lightning-layout-item>
+            </template>
+            <template if:false={clientThereinHeader}>
+               <!-- <lightning-layout-item flexibility="auto" padding="around-small">
+                    <div class="slds-text-align_right">{label_Testing_Program} {label_All}</div>
+                </lightning-layout-item>-->
+              
+                                <div class="searchContainer">
+                                    <div class="slds-text-align_right slds-grid slds-grid_align-end">
+                                    <div class="slds-col slds-align-end">
+                                        <div class="searchIconWrapper" tabindex="0" aria-label={searchProgramIconLabel} onclick={openArticleModal} onkeydown={handleSearchKeyDown} role="button">
+                                        <span class="slds-assistive-text">{searchProgramIconLabel}</span>
+                                        <i class="fa-solid fa-magnifying-glass searchIcon"></i>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+
+                <lightning-layout-item flexibility="auto" padding="around-small" style="display:none;">
+                    <div class="slds-text-align_right slds-grid slds-grid_align-end">
+                        <div class="slds-align-end">
+                            <div class="circular-button" style="mix-blend-mode: luminosity;">
+                                <lightning-button-icon icon-name="utility:search" style="color:white;"
+                                    alternative-text="Search" onclick={openArticleModal} variant="bare"
+                                    class="slds-button"></lightning-button-icon>
+                            </div>
+                        </div>
+                    </div>
+                </lightning-layout-item>
+            </template>
+        </div>
+
+        <!--Article Detail Page Modal -->
+        <template if:true={showArticleModal}>
+            <c-article-detail-page-modal 
+                client-name={clientName} 
+                id-of-client={clientCode}
+                client-there={clientThere} 
+                onclosearticlesearchmodal={closeArticleModal}
+                onopenmodalpopup={openModalPopup}>
+            </c-article-detail-page-modal>
+        </template>
+        <!--Article Detail Page Modal -->
+
+        <!--Modal Popup -->
+        <template if:true={showModalPopup}>
+            <c-modal-popup onclosemodal={closeModalPopup} onsendclient={handleClientSelected}
+                client-present={clientThere} client-name-from-container={nameOfClient}
+                onremoveclient={handleRemoveClient} current-page-reference-state={currentPageReferenceState}>
+            </c-modal-popup>
+        </template>
+        <!--Modal Popup -->
+    </div>
+</template>
